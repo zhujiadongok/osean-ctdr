@@ -1,6 +1,6 @@
 # OSEAN Manuscript Draft (JAMIA Research and Applications)
 
-**Working title:** OSEAN-CTDR: SEA-CDM–based vaccine trial evidence integration and ontology-guided design-field prediction
+**Working title:** OSEAN-CTDR: Ontology-based SEA Network Clinical Trial Design Recommendation for SEA-CDM–based vaccine trial evidence integration
 
 **Authors:** Jiadong Zhu, Feng-Yu (Leo) Yeh, Jie Zheng, Yongqun (Oliver) He  
 **Affiliation:** University of Michigan Medical School  
@@ -14,7 +14,7 @@
 
 **Objective:** To develop a SEA-CDM–based representation of vaccine trial evidence and evaluate whether Vaccine Ontology relations support design-field prediction for temporally held-out trials and ontology-connected unseen Material classes.
 
-**Materials and Methods:** AACT vaccine trials were organized in SEA-CDM v1.4 (`SEA-CDM AACT vaccine remapped/v1.4`) with VO grounding. OSEAN-CTDR predicts allocation, masking, intervention model, and enrollment from typed features. We used a temporal split (train start &lt;2022; test ≥2022) and an exploratory ontology-connected unseen-Material evaluation (nine mid-frequency classes): pooled simultaneous holdout and leave-one-Material-out (LOMO). Exact-match and OntSim kNN used identical weights and a shared missing-ID rule (unknown≠match); OntSim expands subclass and optional role neighborhoods.
+**Materials and Methods:** AACT vaccine trials were organized in SEA-CDM v1.4 (`SEA-CDM AACT vaccine remapped/v1.4`) with VO grounding. OSEAN-CTDR predicts allocation, masking, intervention model, and enrollment from typed features. We used a temporal split (train start <2022; test ≥2022) and an exploratory ontology-connected unseen-Material evaluation (nine mid-frequency classes): pooled simultaneous holdout and leave-one-Material-out (LOMO). Exact-match and OntSim kNN used identical weights and a shared missing-ID rule (unknown≠match); OntSim expands subclass and optional role neighborhoods.
 
 **Results:** On the temporal test (n=283), OntSim and exact-match were similar (0.656 vs 0.658). In the pooled holdout (n=413), OntSim+role achieved the highest observed trial-mean accuracy among evaluated methods (0.635) versus 0.620 for exact-match (Δ +1.47 percentage points, 95% CI 0.44–2.52) and 0.628 for HistGBDT. Under LOMO, class-equal summaries favored tabular models, while trial-equal OntSim−exact was near zero (+0.0012).
 
@@ -30,7 +30,7 @@
 
 Designing a vaccine trial requires choosing allocation, masking, intervention model, and enrollment under product, indication, and phase constraints. Historical ClinicalTrials.gov registrations provide potentially reusable design information, but registry records combine structured fields with free-text descriptions that require harmonization for ontology-guided reuse [1,2]. Prior work has also represented trial entities as knowledge graphs for retrieval and related applications [3].
 
-The Study–Experiment–Assay Common Data Model (SEA-CDM) and Ontology-based SEA Network (OSEAN) provide a published framework for immune-study structure [7]. Building on SEA-CDM and OSEAN, we extend their application to vaccine-registry evidence integration and ontology-guided design-field prediction. This paper’s additions are a vaccine-registry mapping into SEA-CDM v1.4, ClinicalTrials.gov design recommendation (OSEAN-CTDR), and evaluations of temporal prediction versus ontology-connected unseen Material transfer.
+The Study–Experiment–Assay Common Data Model (SEA-CDM) and Ontology-based SEA Network (OSEAN) provide a published framework for immune-study structure [7]. Building on SEA-CDM and OSEAN, we extend their application to vaccine-registry evidence integration and ontology-guided design-field prediction. This paper’s additions are a vaccine-registry mapping into SEA-CDM v1.4, the OSEAN Clinical Trial Design Recommendation system (OSEAN-CTDR), and evaluations of temporal prediction versus ontology-connected unseen Material transfer.
 
 ---
 
@@ -46,7 +46,7 @@ The pipeline is shown in **Figure 1**.
 
 ### 3.1 SEA-CDM resource (paper package)
 
-All CTDR/AE analyses use **`SEA-CDM AACT vaccine remapped/v1.4`** (9,147 studies)—not the separate `SEA-CDM VaxCT VO enriched` export (9,149 studies). Core tables follow official v1.4 column layouts (`V14_COMPLIANCE.json`). Project sidecars used for features are listed in Table S0 and are not official core tables.
+All CTDR/AE analyses use `**SEA-CDM AACT vaccine remapped/v1.4**` (9,147 studies)—not the separate `SEA-CDM VaxCT VO enriched` export (9,149 studies). Core tables follow official v1.4 column layouts (`V14_COMPLIANCE.json`). Project sidecars used for features are listed in Table S0 and are not official core tables.
 
 **Source versions.** AACT: pipe-delimited ClinicalTrials.gov extract used for remapping; the exact NLM/AACT snapshot date was not retained. Vaccine Ontology release **2026-06-12** [4,5]. File identifiers and checksums for reproduction are in Table S8.
 
@@ -64,7 +64,7 @@ Product/platform strings are linked via VO and VIOLIN [6] (**Figure 2**).
 
 **Funnel (profile → CTDR).** Profile studies 9,147 → interventional 7,924 → non-missing phase 6,956 → labeled allocation 5,582 → Material VO (`arch_vo` starts with `VO_`) 1,428 → non-missing `start_date` **1,418**. Among 1,418: mapping how = platform 801 / product 320 / both 297; `vo_platform=unknown` in 242 trials.
 
-**Splits.** Temporal: train start &lt;2022 (n=1,135); test ≥2022 (n=283). Inner lock: fit &lt;2019 (n=891), validation 2019–2021 (n=244). This is **retrospective prediction of registered design characteristics** from a fixed registry snapshot: `start_date` splits do not replay historical visibility of enrollment or other fields. Enrollment buckets use the profile `enrollment` number (AACT registry field; may be anticipated or actual depending on study status) with cutpoints 50/150/500.
+**Splits.** Temporal: train start <2022 (n=1,135); test ≥2022 (n=283). Inner lock: fit <2019 (n=891), validation 2019–2021 (n=244). This is **retrospective prediction of registered design characteristics** from a fixed registry snapshot: `start_date` splits do not replay historical visibility of enrollment or other fields. Enrollment buckets use the profile `enrollment` number (AACT registry field; may be anticipated or actual depending on study status) with cutpoints 50/150/500.
 
 **Targets (Setting A).** Allocation; masking (5-way); intervention_model; enrollment_bucket. Unknown gold counts in the 1,418 cohort: masking 16, intervention_model 29, enrollment_bucket 15 (excluded from per-field evaluation; kNN skips unknown neighbor votes; classifiers drop unknown labels when training).
 
@@ -78,7 +78,7 @@ $$
 s(q,t) = 1\cdot I(\mathrm{disease}) + 1\cdot I(\mathrm{phase}) + 0.5\cdot I(\mathrm{purpose}) + 1\cdot J(\mathrm{platform}) + 0.5\cdot J(\mathrm{Material}).
 $$
 
-Missing values (`unknown`/empty) never contribute a positive match on either side. For platform, OntSim applies only when both sides are usable `VO_` ids after canonicalization; otherwise both modes use the same categorical exact rule. For Material, exact uses canonical VO equality; OntSim uses Jaccard over relation-expanded neighborhoods: subclass = self + traversable parents; role mode also adds inherited `has_role` nodes and those roles’ parents. Top-$k$ training neighbors by score with **$k=20$** (from the exploratory grid $k\in\{5,10,15,20\}$); $k=20$ was fixed after informal chronological exploration and then used for all reported exact/OntSim contrasts—it was not validation-locked and was not re-tuned on the pooled or LOMO holdouts (ties broken by NCT id). Each target is a weighted vote with weight $\max(s,0)+10^{-6}$, skipping missing neighbor labels; if no valid votes → `unknown`. Paper scripts use the four Setting A targets (not config defaults that also list `primary_outcome_family`).
+Missing values (`unknown`/empty) never contribute a positive match on either side. For platform, OntSim applies only when both sides are usable `VO_` ids after canonicalization; otherwise both modes use the same categorical exact rule. For Material, exact uses canonical VO equality; OntSim uses Jaccard over relation-expanded neighborhoods: subclass = self + traversable parents; role mode also adds inherited `has_role` nodes and those roles’ parents. Top-$k$ training neighbors by score with **$k=20$** (from the exploratory grid $k\in5,10,15,20$); $k=20$ was fixed after informal chronological exploration and then used for all reported exact/OntSim contrasts—it was not validation-locked and was not re-tuned on the pooled or LOMO holdouts (ties broken by NCT id). Each target is a weighted vote with weight $\max(s,0)+10^{-6}$, skipping missing neighbor labels; if no valid votes → `unknown`. Paper scripts use the four Setting A targets (not config defaults that also list `primary_outcome_family`).
 
 ### 3.5 Unseen-Material protocols (exploratory)
 
@@ -196,7 +196,7 @@ Entrypoints and full paths: Table S8.
 
 ### S1. Setting B (coarse labels) and R-GCN
 
-OPEN/BLINDED; PARALLEL/OTHER; SMALL&lt;150 / LARGE≥150; allocation unchanged. Unknown gold excluded. Reported numbers are the frozen exploratory artifact `ckpts/sea_ml_v14/ctdr/optimize/push08/` produced by `ctdr/push08_lock.py` (val-locked logistic best among classical models): HistGBDT test mean 0.821; logistic 0.815; frequency 0.802; ontology-kNN@20 0.800; R-GCN enriched 0.787. That run predates the shared missing-ID alignment later applied in `recommend.py` for Setting A / `graph_value`; Setting B was not re-scored after the fix and is not a primary claim.
+OPEN/BLINDED; PARALLEL/OTHER; SMALL<150 / LARGE≥150; allocation unchanged. Unknown gold excluded. Reported numbers are the frozen exploratory artifact `ckpts/sea_ml_v14/ctdr/optimize/push08/` produced by `ctdr/push08_lock.py` (val-locked logistic best among classical models): HistGBDT test mean 0.821; logistic 0.815; frequency 0.802; ontology-kNN@20 0.800; R-GCN enriched 0.787. That run predates the shared missing-ID alignment later applied in `recommend.py` for Setting A / `graph_value`; Setting B was not re-scored after the fix and is not a primary claim.
 
 **R-GCN (brief).** Supervised relational GCN on the enriched CTDR input graph (SEA-CDM typed nodes + VO subclass/`has_role` + same-context links; design targets excluded as edges). Architecture: 3 layers, embedding dim 128, Adam lr $10^{-2}$, weight decay $10^{-4}$, 450 epochs (`RGCNClf` in `ctdr/push08_lock.py`). Hybrid onto+R-GCN blends were evaluated but did not beat HistGBDT on the locked Setting B test mean.
 
@@ -251,7 +251,7 @@ Local identifiers (not a substitute for public deposit):
 
 - AACT dump: `AACT Database/` + folder id `6wvqgoof4dut7eaxn610uzfajvnt`
 - `studies.txt` size 390,802,838 bytes; SHA-256  
-  `82870fc4a17cc1eb` `75529c603866db82` `207ff7366ab49569` `f4779f89ffaba7f8`
+`82870fc4a17cc1eb` `75529c603866db82` `207ff7366ab49569` `f4779f89ffaba7f8`
 - VO OWL: under `SEA-CDM AACT vaccine remapped/research_factors/vo_mapping/FOR_ADVISOR/` (`vo.owl`)
 - Chart labels: `osean_neo4j/vo_eligible_labels.py`
 - Primary contrasts (shared missing-ID): `ckpts/sea_ml_v14/ctdr/optimize/graph_value/graph_value.json`
@@ -287,20 +287,18 @@ Local identifiers (not a substitute for public deposit):
 
 ## References
 
-1. Zarin DA, Tse T, Williams RJ, Califf RM, Ide NC. The ClinicalTrials.gov results database—update and key issues. *N Engl J Med*. 2011;364:852–860.  
-2. Tasneem A, Aberle L, Ananthakrishnan S, et al. The database for Aggregate Analysis of ClinicalTrials.gov (AACT) and subsequent regrouping by clinical specialty. *PLoS One*. 2012;7:e33677.  
-3. Chen Z, Peng B, Ioannidis VN, et al. A knowledge graph of clinical trials (CTKG). *Sci Rep*. 2022;12:4724.  
-4. He Y, Cowell L, Diehl AD, et al. VO: Vaccine Ontology. *Nature Precedings*. 2009.  
-5. Lin Y, He Y. The ontology of vaccine adverse events (OVAE) and its usage in representing and analyzing adverse events associated with US-licensed vaccine products. *J Biomed Semantics*. 2012;3:17.  
-6. Xiang Z, Todd T, Ku KP, et al. VIOLIN: vaccine investigation and online information network. *Nucleic Acids Res*. 2008;36:D923–D928.  
-7. Huffman A, et al. The Study–Experiment–Assay Common Data Model (SEA-CDM) and Ontology-based SEA Network (OSEAN). *Sci Data*. 2026;13:238. doi:10.1038/s41597-026-06558-z  
+1. Zarin DA, Tse T, Williams RJ, Califf RM, Ide NC. The ClinicalTrials.gov results database—update and key issues. *N Engl J Med*. 2011;364:852–860.
+2. Tasneem A, Aberle L, Ananthakrishnan S, et al. The database for Aggregate Analysis of ClinicalTrials.gov (AACT) and subsequent regrouping by clinical specialty. *PLoS One*. 2012;7:e33677.
+3. Chen Z, Peng B, Ioannidis VN, et al. A knowledge graph of clinical trials (CTKG). *Sci Rep*. 2022;12:4724.
+4. He Y, Cowell L, Diehl AD, et al. VO: Vaccine Ontology. *Nature Precedings*. 2009.
+5. Lin Y, He Y. The ontology of vaccine adverse events (OVAE) and its usage in representing and analyzing adverse events associated with US-licensed vaccine products. *J Biomed Semantics*. 2012;3:17.
+6. Xiang Z, Todd T, Ku KP, et al. VIOLIN: vaccine investigation and online information network. *Nucleic Acids Res*. 2008;36:D923–D928.
+7. Huffman A, et al. The Study–Experiment–Assay Common Data Model (SEA-CDM) and Ontology-based SEA Network (OSEAN). *Sci Data*. 2026;13:238. doi:10.1038/s41597-026-06558-z
 8. Pedregosa F, Varoquaux G, Gramfort A, et al. Scikit-learn: machine learning in Python. *JMLR*. 2011;12:2825–2830.
 
 ---
 
 ## Notes for coauthors
 
-- Confirm J. Zheng CRediT role; insert funding statement before submission.  
-- Before submission: **Publish** Zenodo draft https://zenodo.org/uploads/23773934 so DOI `10.5281/zenodo.23773934` resolves publicly.  
-- Optional: GitHub Release `v0.1.0` + Zenodo GitHub webhook for a second code DOI.  
+- Confirm J. Zheng CRediT role; insert funding statement and public archive URL before submission.  
 - Figure/table labels: `vo_eligible_labels.py` ↔ Table S7.

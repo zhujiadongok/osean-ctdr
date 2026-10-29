@@ -1,8 +1,10 @@
 # OSEAN-CTDR
 
-Reproduction package for **OSEAN-CTDR**: SEA-CDM–based vaccine trial evidence integration and ontology-guided design-field prediction (JAMIA draft).
+**OSEAN-CTDR** = **O**ntology-based **SEA** **N**etwork **C**linical **T**rial **D**esign **R**ecommendation.
 
-This repository contains analysis code, feature sidecars used by CTDR, frozen result artifacts cited in the paper, and manuscript helpers. It does **not** include the full AACT dump (too large; snapshot date was not retained locally—see paper Table S8).
+Reproduction package for the JAMIA draft: *OSEAN-CTDR: Ontology-based SEA Network Clinical Trial Design Recommendation for SEA-CDM–based vaccine trial evidence integration*.
+
+This repository contains analysis code, feature sidecars used by CTDR, frozen result artifacts cited in the paper, and manuscript helpers. It does **not** include the full AACT dump (too large; snapshot date was not retained locally—see paper Table S8). Supporting data Zenodo draft: https://doi.org/10.5281/zenodo.23773934
 
 ## Layout
 

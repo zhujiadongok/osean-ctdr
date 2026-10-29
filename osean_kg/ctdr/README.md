@@ -1,4 +1,4 @@
-# OSEAN CTDR (Clinical Trial Design Recommender)
+# OSEAN-CTDR (Clinical Trial Design Recommendation)
 
 Highest-standard PoC on **SEA-CDM v1.4** + advisor **`vo.owl`**.
 
