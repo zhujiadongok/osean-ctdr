@@ -1,0 +1,29 @@
+GRAPH VALUE EXPERIMENTS
+
+## Ontology-connected unseen Material
+eligible=9 pooled_train=1005 pooled_test=413
+LOMO class-mean trial accuracy:
+  0.6378  hist_gbdt_no_vo
+  0.6310  frequency_by_phase
+  0.6305  hist_gbdt_full
+  0.6262  hist_gbdt_no_material
+  0.6112  exact_knn_k20
+  0.6061  ontsim_subclass_k20
+  0.6041  ontsim_subclass_role_k20
+
+Pooled trial-mean accuracy:
+  0.6350  ontsim_subclass_role_k20
+  0.6299  frequency_by_phase
+  0.6289  hist_gbdt_no_vo
+  0.6281  ontsim_subclass_k20
+  0.6277  hist_gbdt_full
+  0.6259  hist_gbdt_no_material
+  0.6203  exact_knn_k20
+
+## Matched ontology ablation (chrono, trial-mean)
+  0.6581  exact_knn_k20
+  0.6581  hist_gbdt_full
+  0.6564  ontsim_subclass_k20
+  0.6564  ontsim_subclass_role_k20
+  0.6528  hist_gbdt_no_vo
+  0.6334  frequency_by_phase

@@ -1,0 +1,111 @@
+{
+  "phase1_version": "1.1.0",
+  "recall_definition": "standard |Top-k \u2229 Y| / |Y|",
+  "vocab_fit": "train_ncts_only",
+  "age_impute": "train_median",
+  "age_median_train": 18.0,
+  "example_unit": "trial_arm_role_context",
+  "n_train_contexts": 2065,
+  "n_test_contexts": 506,
+  "n_eval_contexts": 483,
+  "n_train_studies": 1624,
+  "n_test_studies": 407,
+  "n_labels": 80,
+  "models": {
+    "freq": {
+      "name": "frequency baseline",
+      "recall@5": 0.20011810003750957,
+      "recall@10": 0.3167744680502842,
+      "precision@5": 0.5213250517598343,
+      "precision@10": 0.47267080745341616,
+      "map": 0.4906375625209492,
+      "n_eval": 483
+    },
+    "A": {
+      "name": "P(Y|Material VO)",
+      "features": [
+        "vo"
+      ],
+      "estimator": "lr",
+      "recall@5": 0.20695625003562754,
+      "recall@10": 0.3249196601152888,
+      "precision@5": 0.5403726708074534,
+      "precision@10": 0.4807453416149068,
+      "map": 0.49683744266114793,
+      "n_eval": 483
+    },
+    "B": {
+      "name": "P(Y|Material VO, platform, C_clinical)",
+      "features": [
+        "vo",
+        "vo_platform",
+        "route",
+        "dose",
+        "sex",
+        "older",
+        "child",
+        "adult",
+        "arm_role",
+        "disease",
+        "min_age"
+      ],
+      "estimator": "lr",
+      "recall@5": 0.22864857317281445,
+      "recall@10": 0.3827221311605234,
+      "precision@5": 0.601656314699793,
+      "precision@10": 0.5374741200828158,
+      "map": 0.5540091758047758,
+      "n_eval": 483,
+      "delta_recall@10_vs_A": 0.057802471045234616
+    },
+    "C": {
+      "name": "P(Y|Material VO, platform, C, VO family)",
+      "features": [
+        "vo",
+        "vo_platform",
+        "route",
+        "dose",
+        "sex",
+        "older",
+        "child",
+        "adult",
+        "arm_role",
+        "disease",
+        "vo_family",
+        "min_age"
+      ],
+      "estimator": "lr",
+      "recall@5": 0.22807951768385049,
+      "recall@10": 0.3829193114819273,
+      "precision@5": 0.6004140786749482,
+      "precision@10": 0.5374741200828158,
+      "map": 0.5537078182974754,
+      "n_eval": 483,
+      "delta_recall@10_vs_B": 0.0001971803214039225
+    },
+    "B_gbdt": {
+      "name": "P(Y|Material VO, platform, C) HistGBDT sanity",
+      "features": [
+        "vo",
+        "vo_platform",
+        "route",
+        "dose",
+        "sex",
+        "older",
+        "child",
+        "adult",
+        "arm_role",
+        "disease",
+        "min_age"
+      ],
+      "estimator": "gbdt",
+      "recall@5": 0.24544349183890918,
+      "recall@10": 0.3991469757209107,
+      "precision@5": 0.6227743271221533,
+      "precision@10": 0.5449275362318841,
+      "map": 0.5752222906999676,
+      "n_eval": 483,
+      "delta_recall@10_vs_A": 0.0742273156056219
+    }
+  }
+}

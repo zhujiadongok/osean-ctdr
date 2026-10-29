@@ -1,0 +1,43 @@
+PUSH08 REDESIGN
+locked=logistic best_gnn=rgcn_rich
+
+## VAL coarse4
+  0.8094  hard2=0.7500  logistic
+  0.8064  hard2=0.7582  hist_gbdt
+  0.8012  hard2=0.7398  frequency_by_phase
+  0.7889  hard2=0.7152  ontology_knn_k20
+  0.7664  hard2=0.6701  rgcn_rich
+  0.7664  hard2=0.6701  hybrid_onto_rgcn_a0.5
+  0.7664  hard2=0.6701  hybrid_onto_rgcn_a0.7
+
+## TEST coarse4
+  0.8207  hard2=0.7580  hist_gbdt
+      allocation: 0.887
+      masking_binary: 0.710
+      intervention_binary: 0.880
+      enrollment_binary: 0.806
+  0.8145  hard2=0.7456  logistic
+      allocation: 0.887
+      masking_binary: 0.700
+      intervention_binary: 0.880
+      enrollment_binary: 0.792
+  0.8021  hard2=0.7191  frequency_by_phase
+      allocation: 0.894
+      masking_binary: 0.731
+      intervention_binary: 0.876
+      enrollment_binary: 0.707
+  0.7995  hard2=0.7138  ontology_knn_k20
+      allocation: 0.894
+      masking_binary: 0.682
+      intervention_binary: 0.876
+      enrollment_binary: 0.746
+  0.7871  hard2=0.6890  rgcn_rich
+      allocation: 0.894
+      masking_binary: 0.650
+      intervention_binary: 0.876
+      enrollment_binary: 0.728
+  0.7871  hard2=0.6890  hybrid_onto_rgcn_a0.7
+      allocation: 0.894
+      masking_binary: 0.650
+      intervention_binary: 0.876
+      enrollment_binary: 0.728

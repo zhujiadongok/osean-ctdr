@@ -1,0 +1,33 @@
+SEA-CDM structural checks — paper package v1.4
+path: D:\study\Research\he\SEA-CDM AACT vaccine remapped\v1.4
+studies: 9147
+
+PRIMARY KEYS (duplicate nonempty rows):
+  study.study_id: dup_rows=0 unique=9147 nonempty=9147/9147
+  experiment.experiment_id: dup_rows=0 unique=18294 nonempty=18294/18294
+  interventions.intervention_id: dup_rows=0 unique=20001 nonempty=20001/20001
+  subject.subject_id: dup_rows=0 unique=9147 nonempty=9147/9147
+  material.material_id: dup_rows=0 unique=20001 nonempty=20001/20001
+  groups.group_id: dup_rows=0 unique=140926 nonempty=140926/140926
+  occurrence.occurrence_id: dup_rows=0 unique=617510 nonempty=617510/617510
+  results.results_id: dup_rows=0 unique=1525757 nonempty=1525757/1525757
+
+FOREIGN KEYS (row-level):
+  experiment.study_id→study: resolved=100.0% missing=0 unresolvable=0
+  subject.experiment_id→experiment: resolved=100.0% missing=0 unresolvable=0
+  interventions.experiment_id→experiment: resolved=100.0% missing=0 unresolvable=0
+  interventions.subject_id→subject: resolved=100.0% missing=0 unresolvable=0
+  interventions.material_id→material: resolved=0.0% missing=0 unresolvable=20001
+  subject.group_id→groups: resolved=0.0% missing=0 unresolvable=9147
+  occurrence.organism_id→subject: resolved=100.0% missing=0 unresolvable=0
+  results.experiment_id→experiment: resolved=100.0% missing=0 unresolvable=0
+  results.group_id→groups: resolved=99.9606% missing=601 unresolvable=0
+
+SAME-STUDY PATH (intervention experiment vs subject):
+  pairs both resolve: 20001
+  same study: 20001
+  mismatch: 0
+
+SEMANTIC CAVEAT:
+  material_id placeholder VO:0000001: 100.0%
+  Do not equate field fill or FK resolve rates with mapping accuracy.

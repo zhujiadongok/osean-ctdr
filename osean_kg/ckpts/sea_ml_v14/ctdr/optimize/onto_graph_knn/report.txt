@@ -1,0 +1,19 @@
+FAIR OntSim ABLATION (matched weights)
+Primary: Material=0.5 Platform=1.0
+
+## TEST primary
+  0.6608  f1=0.3377  logistic
+  0.6581  f1=0.3644  hist_gbdt
+  0.6581  f1=0.3206  exact_k20_wM05
+  0.6564  f1=0.3256  graph_subclass_k20_wM05
+  0.6564  f1=0.3256  graph_subclass_role_k20_wM05
+  0.6334  f1=0.2565  frequency_by_phase
+
+bootstrap graph+role - exact: -0.0018 CI [-0.0186, +0.0133]
+bootstrap subclass - exact: -0.0018 CI [-0.0186, +0.0133]
+
+## TEST sensitivity Material=1.0
+  0.6608  exact_k20_wM10
+  0.6608  graph_subclass_role_k20_wM10
+  0.6564  graph_subclass_k20_wM10
+bootstrap sens: +0.0000 CI [-0.0088, +0.0088]
