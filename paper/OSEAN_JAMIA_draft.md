@@ -245,7 +245,7 @@ Eligibility: count in [12, 80] and ontology-connected within the CTDR cohort; al
 
 ### S8. Reproducibility file inventory
 
-Public code package: https://github.com/zhujiadongok/osean-ctdr. Zenodo data draft: https://zenodo.org/uploads/23773934 (publish for DOI at submission). Deposit should include, at minimum: SEA-CDM v1.4 vaccine remapped tables used here; `disease_vo_map.csv` and platform roll-up (`PROFILE_TO_OFFICIAL`); VO release 2026-06-12 OWL; CTDR cohort/split NCT lists; analysis configs and scripts under `osean_kg/ctdr/`; frozen result JSONs (`graph_value.json`, `onto_graph_knn.json`, `seacdm_linkage/`, `push08/`, AE `metrics.json`). Checksums identify files but do not replace a downloadable archive.
+Public code: https://github.com/zhujiadongok/osean-ctdr. Supporting data (Zenodo; DOI reserved, publish at submission): https://doi.org/10.5281/zenodo.23773934. Package contents: VO OWL 2026-06-12, CTDR sidecars, frozen result JSONs (`graph_value`, `onto_graph_knn`, `seacdm_linkage`, `push08`, AE `metrics.json`), and class labels (see deposit README).
 
 Local identifiers (not a substitute for public deposit):
 
@@ -264,7 +264,7 @@ Local identifiers (not a substitute for public deposit):
 **Funding.** *[Corresponding author to insert funding statement before submission.]*  
 **Author contributions.** J. Zhu: analysis design, implementation, evaluation, and drafting. F.-Y. Yeh: VO/VaxCT mapping resources. J. Zheng: *[role to confirm]*. Y. He: supervision and critical revision. All authors approved the submitted version.  
 **Conflict of interest.** None declared.  
-**Data and code.** Analysis code, CTDR feature sidecars, and frozen result artifacts: https://github.com/zhujiadongok/osean-ctdr (see Table S8). Zenodo supporting-data deposit (draft, unpublished): https://zenodo.org/uploads/23773934 — replace with the published DOI at submission.  
+**Data and code.** Code: https://github.com/zhujiadongok/osean-ctdr. Supporting data: https://doi.org/10.5281/zenodo.23773934 (DOI reserved; Zenodo record to be published at submission; see Table S8).  
 **AI assistance.** Language and code editing assistance was used; authors verified all scientific content and results.
 
 ---
@@ -300,5 +300,7 @@ Local identifiers (not a substitute for public deposit):
 
 ## Notes for coauthors
 
-- Confirm J. Zheng CRediT role; insert funding statement and public archive URL before submission.  
+- Confirm J. Zheng CRediT role; insert funding statement before submission.  
+- Before submission: **Publish** Zenodo draft https://zenodo.org/uploads/23773934 so DOI `10.5281/zenodo.23773934` resolves publicly.  
+- Optional: GitHub Release `v0.1.0` + Zenodo GitHub webhook for a second code DOI.  
 - Figure/table labels: `vo_eligible_labels.py` ↔ Table S7.
