@@ -1,0 +1,24 @@
+Title:
+OSEAN-CTDR supporting data: Vaccine Ontology, CTDR feature sidecars, and frozen evaluation artifacts
+
+Creators (match manuscript):
+Zhu, Jiadong; Yeh, Feng-Yu; Zheng, Jie; He, Yongqun
+
+Description:
+Supporting data for OSEAN-CTDR (SEA-CDM–based vaccine trial evidence integration and ontology-guided design-field prediction). Includes the Vaccine Ontology OWL file used in analyses (release 2026-06-12), CTDR feature sidecars, frozen result JSON artifacts, and class-label helpers. Companion code: https://github.com/zhujiadongok/osean-ctdr. Full AACT dump is not redistributed; local snapshot identifiers and checksums are documented in README.md and the manuscript Table S8.
+
+Keywords:
+clinical trials; SEA-CDM; Vaccine Ontology; ClinicalTrials.gov; knowledge graph; OSEAN-CTDR
+
+Related identifiers:
+isSupplementTo / isCompiledBy: https://github.com/zhujiadongok/osean-ctdr
+isDerivedFrom: http://purl.obolibrary.org/obo/vo/releases/2026-06-12/vo.owl
+
+License (suggested):
+Creative Commons Attribution 4.0 International (for redistributed tables / documentation); VO subject to OBO/VO terms; code on GitHub under repository license.
+
+Upload type:
+Dataset
+
+Communities (optional):
+zenodo

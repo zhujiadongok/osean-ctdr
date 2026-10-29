@@ -1,0 +1,201 @@
+{
+  "package": "D:\\study\\Research\\he\\SEA-CDM AACT vaccine remapped\\v1.4",
+  "package_note": "Paper CTDR package (ctdr.config.V14). Do not conflate with SEA-CDM VaxCT VO enriched (9,149 studies).",
+  "distinction": {
+    "field_completeness": "non-empty cell rates / fill after hardening",
+    "fk_validity": "row-level: empty vs unresolvable vs resolved in parent PK set",
+    "semantic_mapping_correctness": "NOT measured here \u2014 requires source-record audit. material_id may be VO:0000001 placeholder; study_context_profile.csv is a project sidecar."
+  },
+  "resource_counts": {
+    "n_study": 9147,
+    "n_experiment": 18294,
+    "n_subject": 9147,
+    "n_interventions": 20001,
+    "n_material": 20001,
+    "n_groups": 140926,
+    "n_occurrence": 617510,
+    "n_results": 1525757,
+    "n_occurrence_severity_mapped_ae_like": 601707
+  },
+  "primary_keys": {
+    "study": {
+      "column": "study_id",
+      "n_rows": 9147,
+      "n_nonempty": 9147,
+      "n_unique_nonempty": 9147,
+      "n_duplicate_nonempty_rows": 0,
+      "pct_nonempty": 100.0
+    },
+    "experiment": {
+      "column": "experiment_id",
+      "n_rows": 18294,
+      "n_nonempty": 18294,
+      "n_unique_nonempty": 18294,
+      "n_duplicate_nonempty_rows": 0,
+      "pct_nonempty": 100.0
+    },
+    "interventions": {
+      "column": "intervention_id",
+      "n_rows": 20001,
+      "n_nonempty": 20001,
+      "n_unique_nonempty": 20001,
+      "n_duplicate_nonempty_rows": 0,
+      "pct_nonempty": 100.0
+    },
+    "subject": {
+      "column": "subject_id",
+      "n_rows": 9147,
+      "n_nonempty": 9147,
+      "n_unique_nonempty": 9147,
+      "n_duplicate_nonempty_rows": 0,
+      "pct_nonempty": 100.0
+    },
+    "material": {
+      "column": "material_id",
+      "n_rows": 20001,
+      "n_nonempty": 20001,
+      "n_unique_nonempty": 20001,
+      "n_duplicate_nonempty_rows": 0,
+      "pct_nonempty": 100.0
+    },
+    "groups": {
+      "column": "group_id",
+      "n_rows": 140926,
+      "n_nonempty": 140926,
+      "n_unique_nonempty": 140926,
+      "n_duplicate_nonempty_rows": 0,
+      "pct_nonempty": 100.0
+    },
+    "occurrence": {
+      "column": "occurrence_id",
+      "n_rows": 617510,
+      "n_nonempty": 617510,
+      "n_unique_nonempty": 617510,
+      "n_duplicate_nonempty_rows": 0,
+      "pct_nonempty": 100.0
+    },
+    "results": {
+      "column": "results_id",
+      "n_rows": 1525757,
+      "n_nonempty": 1525757,
+      "n_unique_nonempty": 1525757,
+      "n_duplicate_nonempty_rows": 0,
+      "pct_nonempty": 100.0
+    }
+  },
+  "foreign_keys_row_level": {
+    "experiment.study_id\u2192study": {
+      "child_column": "study_id",
+      "n_rows": 18294,
+      "n_missing_empty": 0,
+      "n_unresolvable": 0,
+      "n_resolved": 18294,
+      "pct_rows_resolved": 100.0,
+      "pct_nonempty_that_resolve": 100.0,
+      "allow_empty_note": false
+    },
+    "subject.experiment_id\u2192experiment": {
+      "child_column": "experiment_id",
+      "n_rows": 9147,
+      "n_missing_empty": 0,
+      "n_unresolvable": 0,
+      "n_resolved": 9147,
+      "pct_rows_resolved": 100.0,
+      "pct_nonempty_that_resolve": 100.0,
+      "allow_empty_note": false
+    },
+    "interventions.experiment_id\u2192experiment": {
+      "child_column": "experiment_id",
+      "n_rows": 20001,
+      "n_missing_empty": 0,
+      "n_unresolvable": 0,
+      "n_resolved": 20001,
+      "pct_rows_resolved": 100.0,
+      "pct_nonempty_that_resolve": 100.0,
+      "allow_empty_note": false
+    },
+    "interventions.subject_id\u2192subject": {
+      "child_column": "subject_id",
+      "n_rows": 20001,
+      "n_missing_empty": 0,
+      "n_unresolvable": 0,
+      "n_resolved": 20001,
+      "pct_rows_resolved": 100.0,
+      "pct_nonempty_that_resolve": 100.0,
+      "allow_empty_note": false
+    },
+    "interventions.material_id\u2192material": {
+      "child_column": "material_id",
+      "n_rows": 20001,
+      "n_missing_empty": 0,
+      "n_unresolvable": 20001,
+      "n_resolved": 0,
+      "pct_rows_resolved": 0.0,
+      "pct_nonempty_that_resolve": 0.0,
+      "allow_empty_note": false,
+      "interpretation": "material_id holds ontology CURIEs (often VO:0000001 placeholder), not material.material_id row keys \u2014 unresolved here is expected and is a semantic-mapping gap, not a broken Study spine."
+    },
+    "subject.group_id\u2192groups": {
+      "child_column": "group_id",
+      "n_rows": 9147,
+      "n_missing_empty": 0,
+      "n_unresolvable": 9147,
+      "n_resolved": 0,
+      "pct_rows_resolved": 0.0,
+      "pct_nonempty_that_resolve": 0.0,
+      "allow_empty_note": false,
+      "interpretation": "Hardening fills subject.group_id=GROUP_1 (singleton cohort guidance); design arms live in groups.csv with distinct GROUP_DESIGN_* ids."
+    },
+    "occurrence.organism_id\u2192subject": {
+      "child_column": "organism_id",
+      "n_rows": 617510,
+      "n_missing_empty": 0,
+      "n_unresolvable": 0,
+      "n_resolved": 617510,
+      "pct_rows_resolved": 100.0,
+      "pct_nonempty_that_resolve": 100.0,
+      "allow_empty_note": false
+    },
+    "results.experiment_id\u2192experiment": {
+      "child_column": "experiment_id",
+      "n_rows": 1525757,
+      "n_missing_empty": 0,
+      "n_unresolvable": 0,
+      "n_resolved": 1525757,
+      "pct_rows_resolved": 100.0,
+      "pct_nonempty_that_resolve": 100.0,
+      "allow_empty_note": false
+    },
+    "results.group_id\u2192groups": {
+      "child_column": "group_id",
+      "n_rows": 1525757,
+      "n_missing_empty": 601,
+      "n_unresolvable": 0,
+      "n_resolved": 1525156,
+      "pct_rows_resolved": 99.9606,
+      "pct_nonempty_that_resolve": 100.0,
+      "allow_empty_note": true
+    }
+  },
+  "same_study_paths": {
+    "intervention_experiment_and_subject_both_resolve_to_study": 20001,
+    "n_same_study": 20001,
+    "n_cross_study_mismatch": 0,
+    "pct_resolved_pairs_same_study": 100.0
+  },
+  "material_semantics_caveat": {
+    "pct_intervention_material_id_placeholder_VO_0000001": 100.0,
+    "note": "Fill rate 100% \u2260 specific-vaccine mapping accuracy. Hardening audit: placeholder material_id with sea_material_row_id in comments."
+  },
+  "prior_artifacts": {
+    "V14_COMPLIANCE_all_core_columns_present": true,
+    "hardening_selected_checks": {
+      "experiment.study_FK_ok": 1.0,
+      "subject.experiment_FK_ok": 1.0,
+      "interventions.subject_id_FK_ok": 1.0,
+      "occurrence.organism_id_FK_ok": 1.0,
+      "interventions.material_id_fill": 1.0,
+      "occurrence.severity_is_CTCAE_0_5": 0.974408511603051
+    }
+  }
+}
