@@ -245,7 +245,7 @@ Eligibility: count in [12, 80] and ontology-connected within the CTDR cohort; al
 
 ### S8. Reproducibility file inventory
 
-Public deposit (Zenodo/GitHub URL at submission) should include, at minimum: SEA-CDM v1.4 vaccine remapped tables used here; `disease_vo_map.csv` and platform roll-up (`PROFILE_TO_OFFICIAL`); VO release 2026-06-12 OWL; CTDR cohort/split NCT lists; analysis configs and scripts under `osean_kg/ctdr/`; frozen result JSONs (`graph_value.json`, `onto_graph_knn.json`, `seacdm_linkage/`, `push08/`, AE `metrics.json`). Checksums identify files but do not replace a downloadable archive.
+Public code package: https://github.com/zhujiadongok/osean-ctdr. Deposit should include, at minimum: SEA-CDM v1.4 vaccine remapped tables used here; `disease_vo_map.csv` and platform roll-up (`PROFILE_TO_OFFICIAL`); VO release 2026-06-12 OWL; CTDR cohort/split NCT lists; analysis configs and scripts under `osean_kg/ctdr/`; frozen result JSONs (`graph_value.json`, `onto_graph_knn.json`, `seacdm_linkage/`, `push08/`, AE `metrics.json`). Checksums identify files but do not replace a downloadable archive.
 
 Local identifiers (not a substitute for public deposit):
 
@@ -264,7 +264,7 @@ Local identifiers (not a substitute for public deposit):
 **Funding.** *[Corresponding author to insert funding statement before submission.]*  
 **Author contributions.** J. Zhu: analysis design, implementation, evaluation, and drafting. F.-Y. Yeh: VO/VaxCT mapping resources. J. Zheng: *[role to confirm]*. Y. He: supervision and critical revision. All authors approved the submitted version.  
 **Conflict of interest.** None declared.  
-**Data and code.** See Table S8 for the intended public-archive contents. A citable archival URL will replace local paths at submission.  
+**Data and code.** Analysis code, CTDR feature sidecars, and frozen result artifacts: https://github.com/zhujiadongok/osean-ctdr (see Table S8). A Zenodo DOI for any remaining large assets can be added at submission.  
 **AI assistance.** Language and code editing assistance was used; authors verified all scientific content and results.
 
 ---
