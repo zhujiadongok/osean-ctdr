@@ -16,9 +16,9 @@
 
 **Materials and Methods:** AACT vaccine trials were organized in SEA-CDM v1.4 (`SEA-CDM AACT vaccine remapped/v1.4`) with VO grounding. OSEAN-CTDR predicts allocation, masking, intervention model, and enrollment from typed features. We used a temporal split (train start <2022; test ≥2022) and an exploratory ontology-connected unseen-Material evaluation (nine mid-frequency classes): pooled simultaneous holdout and leave-one-Material-out (LOMO). Exact-match and OntSim kNN used identical weights and a shared missing-ID rule (unknown≠match); OntSim expands subclass and optional role neighborhoods.
 
-**Results:** On the temporal test (n=283), OntSim and exact-match were similar (0.656 vs 0.658). In the pooled holdout (n=413), OntSim+role achieved the highest observed trial-mean accuracy among evaluated methods (0.635) versus 0.620 for exact-match (Δ +1.47 percentage points, 95% CI 0.44–2.52) and 0.628 for HistGBDT. Under LOMO, class-equal summaries favored tabular models, while trial-equal OntSim−exact was near zero (+0.0012).
+**Results:** On the temporal fine-label test (Setting A, n=283), OntSim and exact-match were similar (0.656 vs 0.658). On the same split with coarsened binary labels (Setting B), HistGBDT reached 0.821 and frequency 0.802; OntSim and exact remained close (0.800 vs 0.797). In the pooled unseen-Material holdout (n=413), OntSim+role achieved the highest observed trial-mean among evaluated methods (0.635) versus 0.620 for exact-match (Δ +1.47 percentage points, 95% CI 0.44–2.52). Under LOMO, class-equal and trial-equal OntSim−exact summaries disagreed (−0.0071 / +0.0012).
 
-**Discussion:** Ontology expansion benefited neighbor-based transfer under simultaneous material-class holdout; gains varied across protocols and weighting schemes and did not establish superiority over HistGBDT.
+**Discussion:** Ontology expansion benefited neighbor-based transfer under simultaneous material-class holdout; Setting B shows that coarsening Y raises absolute accuracy without changing the OntSim≈exact pattern. Gains varied across protocols and did not establish superiority over HistGBDT.
 
 **Conclusion:** SEA-CDM provides a structured foundation for integrating vaccine-trial evidence, while VO relation expansion supports cross-Material retrieval in the exploratory pooled-holdout setting.
 
@@ -90,9 +90,11 @@ $$
 
 for some other cohort Material (closure includes self). Eligible: count in [12, 80] (enough test mass, not cohort-dominant); all nine such classes (Table S7). Rule fixed for this analysis run (not a pre-registered protocol). (i) Pooled: all nine test-only. (ii) LOMO: each held out once. Both report trial-equal and class-equal summaries. Bootstrap: 1,500 trial resamples (not class-level inference).
 
-### 3.6 Other models
+### 3.6 Other models and Setting B
 
-HistGBDT/logistic: SEA-CDM/VO columns including route, dose, sex, age flags, sponsor_class (`regress_predict`; unknown train labels dropped). Frequency-by-phase baseline. BM25/TF-IDF k=20 are **exploratory / test-grid selected**. Setting B and AE details: supplement.
+HistGBDT/logistic: SEA-CDM/VO columns including route, dose, sex, age flags, sponsor_class (`regress_predict`; unknown train labels dropped). Frequency-by-phase baseline. BM25/TF-IDF k=20 are **exploratory / test-grid selected**.
+
+**Setting B (post-hoc coarse Y).** Same cohort, temporal split, features, kNN weights, and missing-ID rules as Setting A; only labels change: masking → OPEN (NONE) / BLINDED; intervention_model → PARALLEL / OTHER; enrollment_bucket → SMALL (&lt;150) / LARGE (≥150); allocation unchanged. Unknown gold excluded from training and evaluation. Setting B is a sensitivity analysis of task difficulty, not a lift from Setting A. AE / R-GCN: supplement.
 
 ---
 
@@ -123,9 +125,23 @@ OntSim − exact trial-mean Δ −0.0018 (95% CI −0.0177 to +0.0133).
 
 **Figure 5** shows per-target HistGBDT versus phase-frequency on the temporal test.
 
-### 4.3 Ontology-connected unseen Materials (exploratory)
+### 4.3 Setting B (coarse labels; same models)
 
-**Table 2.** Pooled holdout of all nine eligible classes (train 1,005 / test 413). Class-mean = unweighted mean of per-class trial-means.
+**Table 2.** Field-mean accuracy on the same 2022+ trials (n=283) after coarsening Y. Models, k, weights, and missing-ID rules match Table 1.
+
+| Method | Field-mean acc | Macro-F1 |
+|--------|---------------:|---------:|
+| Frequency by phase | 0.802 | 0.562 |
+| Exact-match kNN@20 | 0.797 | 0.565 |
+| OntSim kNN@20 (subclass / +role) | 0.800 / 0.800 | 0.574 / 0.573 |
+| Logistic regression | 0.815 | 0.604 |
+| HistGBDT | 0.821 | 0.634 |
+
+OntSim+role − exact trial-mean Δ +0.0035 (95% CI −0.0088 to +0.0150). Frequency already exceeds 0.80 on coarse labels; HistGBDT is highest. Absolute accuracies are higher than Setting A because the exam is easier—not because the model family changed.
+
+### 4.4 Ontology-connected unseen Materials (exploratory)
+
+**Table 3.** Pooled holdout of all nine eligible classes (train 1,005 / test 413). Class-mean = unweighted mean of per-class trial-means.
 
 | Method | Trial-mean | Class-mean |
 |--------|----------:|----------:|
@@ -139,7 +155,7 @@ OntSim − exact trial-mean Δ −0.0018 (95% CI −0.0177 to +0.0133).
 
 In this exploratory pooled holdout, OntSim+role achieved the highest observed trial-mean accuracy among evaluated methods (0.6350), versus 0.6203 for exact-match (Δ **+0.0147**, 95% CI **+0.0044 to +0.0252**) and 0.6277 for HistGBDT (Δ +0.0073, 95% CI −0.0103 to +0.0242). Exact-match still uses VO identifiers; the ablation removes relation expansion only.
 
-**Table 3.** LOMO summaries for the same nine classes (other eligible Materials remain in train). Class-equal = unweighted mean of per-class trial-means; trial-equal = size-weighted mean across held-out trials.
+**Table 4.** LOMO summaries for the same nine classes (other eligible Materials remain in train). Class-equal = unweighted mean of per-class trial-means; trial-equal = size-weighted mean across held-out trials.
 
 | Method | Class-equal | Trial-equal |
 |--------|------------:|------------:|
@@ -155,9 +171,9 @@ Averaging equally across classes, OntSim+role is slightly below exact-match; ave
 
 **Figure 6** shows pooled method ranks and LOMO per-class OntSim−exact deltas.
 
-### 4.4 Matched ablation and secondary analyses
+### 4.5 Matched ablation and secondary analyses
 
-Temporal matched ablation after the shared missing-ID rule: exact 0.658; OntSim 0.656 (CI for OntSim−exact includes 0). Setting B / AE (standard recall@10; Model B 0.383; no-VO ≈0.384): supplement—not used to claim graph indispensability.
+Temporal matched ablation after the shared missing-ID rule: exact 0.658; OntSim 0.656 (CI for OntSim−exact includes 0). AE (standard recall@10; Model B 0.383; no-VO ≈0.384): supplement—not used to claim graph indispensability. R-GCN on Setting B: S1.
 
 ---
 
@@ -165,11 +181,11 @@ Temporal matched ablation after the shared missing-ID rule: exact 0.658; OntSim 
 
 SEA-CDM organizes registry-derived trial evidence into typed entities and traceable links, with project-specific mapping tables supplying prediction features. Within this representation, ontology-expanded neighborhoods enable evidence retrieval across related Material identifiers.
 
-**Why protocols disagree.** The temporal split asks whether neighbors help when Materials are already seen in earlier years—here exact and OntSim are essentially tied, and tabular models remain competitive. The pooled holdout removes nine mid-frequency Materials at once and asks whether VO subclass/role neighborhoods recover design signal from related classes still in train; that is where OntSim+role leads exact-match after the shared missing-ID rule. LOMO holds out one class at a time with other eligible Materials still training: class-equal and trial-equal summaries can disagree when larger classes move differently from smaller ones (Table 3). None of these protocols alone answers “is the graph always better?”; together they bound when relation expansion helps neighbor transfer.
+**Why protocols disagree.** The temporal split asks whether neighbors help when Materials are already seen in earlier years—here exact and OntSim are essentially tied under both fine (Setting A) and coarse (Setting B) labels, while absolute accuracy rises under B because Y is easier (frequency already >0.80). The pooled holdout removes nine mid-frequency Materials at once and asks whether VO subclass/role neighborhoods recover design signal from related classes still in train; that is where OntSim+role leads exact-match after the shared missing-ID rule. LOMO holds out one class at a time with other eligible Materials still training: class-equal and trial-equal summaries can disagree when larger classes move differently from smaller ones (Table 4). None of these protocols alone answers “is the graph always better?”; together they bound when relation expansion helps neighbor transfer. Do not read Setting B 0.82 as an upgrade of Setting A 0.66.
 
 In the exploratory pooled holdout, the observed benefit was relative to exact-match neighbor retrieval after aligning missing-ID rules. Results do not prove that CDM adoption itself raises accuracy, do not establish superiority over HistGBDT, and do not show uniform LOMO gains.
 
-Limits: retrospective snapshot; exploratory eligibility; trial-level bootstrap ≠ class-level inference; placeholder Material CURIEs in core interventions; no full OWL reasoner; no expert mapping panel; Setting B / R-GCN artifacts predate the shared missing-ID alignment used for Setting A and `graph_value`.
+Limits: retrospective snapshot; exploratory eligibility; trial-level bootstrap ≠ class-level inference; placeholder Material CURIEs in core interventions; no full OWL reasoner; no expert mapping panel; Setting B is post-hoc label coarsening; R-GCN numbers remain from legacy `push08` (not re-trained after the missing-ID alignment).
 
 ---
 
@@ -194,11 +210,11 @@ OSEAN-CTDR combines SEA-CDM organization of vaccine registry evidence with VO-gu
 
 Entrypoints and full paths: Table S8.
 
-### S1. Setting B (coarse labels) and R-GCN
+### S1. Setting B classical re-run and R-GCN
 
-OPEN/BLINDED; PARALLEL/OTHER; SMALL<150 / LARGE≥150; allocation unchanged. Unknown gold excluded. Reported numbers are the frozen exploratory artifact `ckpts/sea_ml_v14/ctdr/optimize/push08/` produced by `ctdr/push08_lock.py` (val-locked logistic best among classical models): HistGBDT test mean 0.821; logistic 0.815; frequency 0.802; ontology-kNN@20 0.800; R-GCN enriched 0.787. That run predates the shared missing-ID alignment later applied in `recommend.py` for Setting A / `graph_value`; Setting B was not re-scored after the fix and is not a primary claim.
+Main-text Table 2 classical / kNN numbers: `ckpts/sea_ml_v14/ctdr/optimize/setting_b/setting_b.json` from `ctdr/eval_setting_b.py` (same models, weights, and missing-ID rules as Setting A).
 
-**R-GCN (brief).** Supervised relational GCN on the enriched CTDR input graph (SEA-CDM typed nodes + VO subclass/`has_role` + same-context links; design targets excluded as edges). Architecture: 3 layers, embedding dim 128, Adam lr $10^{-2}$, weight decay $10^{-4}$, 450 epochs (`RGCNClf` in `ctdr/push08_lock.py`). Hybrid onto+R-GCN blends were evaluated but did not beat HistGBDT on the locked Setting B test mean.
+**R-GCN (brief; legacy push08).** Supervised relational GCN on the enriched CTDR input graph (SEA-CDM typed nodes + VO subclass/`has_role` + same-context links; design targets excluded as edges). Architecture: 3 layers, embedding dim 128, Adam lr $10^{-2}$, weight decay $10^{-4}$, 450 epochs (`RGCNClf` in `ctdr/push08_lock.py`). Frozen `push08.json` test mean **0.787** (below frequency 0.802 and HistGBDT 0.821 on the re-run). That GNN artifact predates the shared missing-ID alignment; it was not re-trained for this revision. Hybrid onto+R-GCN blends did not beat HistGBDT on the historical Setting B lock.
 
 ### S2. Resource counts (v1.4 remapped)
 
@@ -245,7 +261,7 @@ Eligibility: count in [12, 80] and ontology-connected within the CTDR cohort; al
 
 ### S8. Reproducibility file inventory
 
-Public code: https://github.com/zhujiadongok/osean-ctdr. Supporting data (Zenodo; DOI reserved, publish at submission): https://doi.org/10.5281/zenodo.23773934. Package contents: VO OWL 2026-06-12, CTDR sidecars, frozen result JSONs (`graph_value`, `onto_graph_knn`, `seacdm_linkage`, `push08`, AE `metrics.json`), and class labels (see deposit README).
+Public code: https://github.com/zhujiadongok/osean-ctdr. Supporting data (Zenodo; DOI reserved, publish at submission): https://doi.org/10.5281/zenodo.23773934. Package contents: VO OWL 2026-06-12, CTDR sidecars, frozen result JSONs (`graph_value`, `onto_graph_knn`, `setting_b`, `seacdm_linkage`, `push08`, AE `metrics.json`), and class labels (see deposit README).
 
 Local identifiers (not a substitute for public deposit):
 
@@ -255,7 +271,8 @@ Local identifiers (not a substitute for public deposit):
 - VO OWL: under `SEA-CDM AACT vaccine remapped/research_factors/vo_mapping/FOR_ADVISOR/` (`vo.owl`)
 - Chart labels: `osean_neo4j/vo_eligible_labels.py`
 - Primary contrasts (shared missing-ID): `ckpts/sea_ml_v14/ctdr/optimize/graph_value/graph_value.json`
-- Entrypoints: `python -u -m ctdr.eval_onto_graph_knn`; `eval_graph_value`; `eval_seacdm_linkage`
+- Setting B (same models, coarse Y): `ckpts/sea_ml_v14/ctdr/optimize/setting_b/setting_b.json`
+- Entrypoints: `python -u -m ctdr.eval_onto_graph_knn`; `eval_graph_value`; `eval_setting_b`; `eval_seacdm_linkage`
 
 ---
 
