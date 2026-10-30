@@ -89,6 +89,27 @@ def build_ctdr_table() -> pd.DataFrame:
     df["arch_vo"] = np.where(arch.str.startswith("VO_"), arch, df["vo_platform"])
     df["arch_vo"] = df["arch_vo"].replace({"": "unknown", "nan": "unknown"})
 
+    # Primary-investigational audit overlay (primary investigational vaccine; see mapping_audit/POLICY.md)
+    corr_path = getattr(cfg, "VO_CORRECTIONS", None)
+    if corr_path is not None and Path(corr_path).is_file():
+        corr = pd.read_csv(corr_path, dtype=str).fillna("")
+        corr["nct_id"] = corr["nct_id"].astype(str).str.upper()
+        corr = corr.drop_duplicates("nct_id")
+        before = df.set_index("nct_id")
+        n_fix = 0
+        for row in corr.itertuples(index=False):
+            nct = row.nct_id
+            if nct not in before.index:
+                continue
+            if str(row.arch_vo).startswith("VO_"):
+                before.at[nct, "arch_vo"] = str(row.arch_vo)
+            plat = str(row.vo_platform)
+            if plat.startswith("VO_") or plat == "unknown":
+                before.at[nct, "vo_platform"] = plat
+            n_fix += 1
+        df = before.reset_index()
+        df.attrs["vo_corrections_applied"] = n_fix
+
     df["route"] = df["intervention_route_label"].map(_canon_route)
     df["dose"] = df["dose_bucket"].replace({"": "unknown", "nan": "unknown"}).fillna("unknown")
     df["sex"] = df["sex_category_id"].replace({"": "unknown", "nan": "unknown"}).fillna("unknown")

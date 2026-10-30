@@ -1,0 +1,18 @@
+{
+  "n_sample": 80,
+  "n_reviewed": 19,
+  "material_judgment": {
+    "incorrect": 10,
+    "correct": 6,
+    "ambiguous": 2
+  },
+  "platform_judgment": {
+    "incorrect": 8,
+    "ambiguous": 4,
+    "correct": 2
+  },
+  "n_material_incorrect": 10,
+  "n_platform_incorrect": 8,
+  "n_either_incorrect": 13,
+  "n_unreviewed": 61
+}

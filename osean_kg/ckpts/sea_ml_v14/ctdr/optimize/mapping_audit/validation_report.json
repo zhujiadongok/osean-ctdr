@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "n_errors": 0,
+  "n_warnings": 0,
+  "n_corrections": 620,
+  "n_advisor_incorrect_checked": 20,
+  "n_advisor_reviewed": 80,
+  "residual": {
+    "hepb_still_vector": 0,
+    "bcg_not_bcg_material": 0,
+    "inact_covid_still_live": 0,
+    "gardasil_not_vlp": 0,
+    "mrna_not_rna_plat": 0,
+    "covid_disease_flu_arch": 0,
+    "standalone_ipv_not_inact": 0,
+    "ava_not_inact": 0,
+    "licensed_flu_unknown_plat": 0,
+    "men_generic_live": 0,
+    "oxford_az_not_vector_covid": 0
+  },
+  "n_arch_eq_plat_vector": 57,
+  "upstream_mismatch": 0,
+  "idempotence_fail": 0,
+  "errors": [],
+  "warnings": []
+}

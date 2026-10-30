@@ -1,0 +1,81 @@
+nct_id,disease,phase,arch_vo,vo_platform,primary_purpose,start_date,reviewer,material_judgment,platform_judgment,notes,suggested_vo
+NCT01531530,other,PHASE1,VO_0000367,VO_0000367,PREVENTION,2011-07-31,ctgov_final22_2026-10-30,correct,correct,CVD 1208S live Shigella; refined to VO_0000668,
+NCT04553016,other,PHASE1,VO_0000534,VO_0000534,PREVENTION,2021-08-16,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004246/VO_0000315,VO_0004246|VO_0000315
+NCT06314880,other,PHASE1,VO_0000367,VO_0000367,PREVENTION,2023-07-22,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0006034/VO_0000195,VO_0006034|VO_0000195
+NCT03606967,other,PHASE2,VO_0000484,VO_0000484,TREATMENT,2021-04-13,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0000577/VO_0000534,VO_0000577|VO_0000534
+NCT05266898,hpv,PHASE4,VO_0007063,VO_0000484,PREVENTION,2022-11-30,advisor_review_2026-10-30,correct,incorrect,Gardasil-9 (HPV L1 VLP); VO_0000484 recombinant vector is wrong platform. Candidate platform VO_0004914 (VLP).,platform:VO_0004914?
+NCT01349647,other,PHASE1,VO_0000195,VO_0000195,TREATMENT,2011-05-31,ctgov_final22_2026-10-30,correct,correct,KLH conjugate retained,
+NCT03412786,other,PHASE1,VO_0000534,VO_0000534,TREATMENT,2018-05-01,ctgov_final22_2026-10-30,correct,correct,Peptide; Material→peptide class,
+NCT04751682,covid,PHASE1,VO_0004908,VO_0000484,PREVENTION,2021-03-01,advisor_review_2026-10-30,correct,correct,BBV154 adenovirus-vectored COVID-19; VO_0004908 + VO_0000484 consistent.,
+NCT05985681,hpv,PHASE1,VO_0007063,VO_0000484,PREVENTION,2025-02-27,advisor_review_2026-10-30,incorrect,incorrect,"RG1-VLP candidate, not Gardasil-9 (VO_0007063); not recombinant vector platform.",material:RG1-VLP class; platform:VLP/protein
+NCT00704938,other,PHASE2,VO_0000484,VO_0000484,TREATMENT,2008-06-30,ctgov_final22_2026-10-30,correct,correct,DC-adenovirus vector retained,
+NCT04617483,covid,PHASE3,VO_0004908,VO_0000367,PREVENTION,2020-10-31,advisor_review_2026-10-30,correct,incorrect,Inactivated SARS-CoV-2 vaccine; VO_0000367 is live attenuated. Suggest inactivated platform class.,platform:inactivated (not VO_0000367)
+NCT05749926,covid,PHASE3,VO_0005198,VO_0000186,PREVENTION,2023-05-16,advisor_review_2026-10-30,ambiguous,ambiguous,Compares recombinant protein COVID booster vs mRNA booster; single RNA platform label cannot describe all arms.,per-arm platforms
+NCT01260727,other,PHASE1,VO_0000032,VO_0000032,PREVENTION,2010-02-28,ctgov_final22_2026-10-30,correct,correct,PENNVAX DNA primary retained,
+NCT00131833,other,PHASE4,VO_0000367,VO_0000367,PREVENTION,2001-10-31,ctgov_final22_2026-10-30,incorrect,incorrect,Typhoid Vi polysaccharide ≠ live attenuated,
+NCT01546389,malaria,PHASE1,VO_0000761,VO_0000367,unknown,2012-04-30,ctgov_final22_2026-10-30,correct,correct,PfSPZ; refined product id,
+NCT02309515,other,PHASE2,VO_0000195,VO_0000195,TREATMENT,2015-06-11,ctgov_final22_2026-10-30,correct,correct,PCV13; refined to Prevnar 13,
+NCT02263027,influenza,PHASE4,VO_0000642,VO_0000534,PREVENTION,2014-10-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004246/VO_0000315,VO_0004246|VO_0000315
+NCT01359449,meningococcal,PHASE3,VO_0000195,VO_0000195,PREVENTION,2011-05-31,ctgov_final22_2026-10-30,correct,correct,Menactra; refined product id,
+NCT00384059,pneumococcal,PHASE3,VO_0000195,VO_0000195,PREVENTION,2006-10-31,ctgov_final22_2026-10-30,correct,correct,PCV13; refined to Prevnar 13,
+NCT00806195,meningococcal,PHASE3,VO_0000195,VO_0000195,PREVENTION,2008-12-31,ctgov_final22_2026-10-30,incorrect,correct,Primary MenACWY; ActHIB was coadministered name,
+NCT00197301,influenza,PHASE1/PHASE2,VO_0000642,VO_0000032,PREVENTION,2005-10-31,advisor_review_2026-10-30,,incorrect,Liposomal nasal influenza vaccine; not DNA vaccine (VO_0000032).,platform:not VO_0000032
+NCT00705640,other,PHASE1,VO_0000534,VO_0000534,TREATMENT,2008-05-31,ctgov_final22_2026-10-30,correct,correct,Peptide; Material→peptide class,
+NCT01056705,other,PHASE2,VO_0000561,VO_0000561,PREVENTION,2009-07-31,ctgov_final22_2026-10-30,incorrect,incorrect,Sabin IPV study; name extract was DTaP-IPV-Hib,
+NCT01943825,other,PHASE2,VO_0000032,VO_0000032,PREVENTION,2013-11-05,ctgov_final22_2026-10-30,incorrect,incorrect,CYD dengue primary; not JE DNA,
+NCT03163121,malaria,PHASE1,VO_0000761,VO_0000367,PREVENTION,2017-05-12,ctgov_final22_2026-10-30,correct,correct,PfSPZ; refined product id,
+NCT04362124,covid,PHASE3,VO_0004908,VO_0000367,SUPPORTIVE_CARE,2020-08-31,advisor_review_2026-10-30,incorrect,correct,"BCG, not COVID-19 vaccine (VO_0004908). Live-attenuated platform VO_0000367 OK for BCG.",material:BCG/tuberculosis vaccine
+NCT00373217,other,PHASE2,VO_0000534,VO_0000534,TREATMENT,2006-04-13,ctgov_final22_2026-10-30,correct,correct,Peptide; Material→peptide class,
+NCT07055880,other,PHASE2,VO_0000367,VO_0000367,PREVENTION,2025-07-28,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0000771/VO_0000367,VO_0000771|VO_0000367
+NCT00614601,other,PHASE2,VO_0000484,VO_0000484,TREATMENT,2008-01-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0007610/VO_0000483,VO_0007610|VO_0000483
+NCT01073293,hpv,PHASE3,VO_0000484,VO_0000484,PREVENTION,2010-04-22,advisor_review_2026-10-30,incorrect,incorrect,Primary vaccine V503 / HPV L1 VLP (Gardasil-9 lineage); not recombinant vector for material or platform.,material:Gardasil-9/V503; platform:VO_0004914?
+NCT03718130,other,PHASE1,VO_0000484,VO_0000484,PREVENTION,2019-07-10,advisor_review_2026-10-30,incorrect,incorrect,HTNV/PUUV DNA vaccine; consider VO_0000032 for platform; arch should be DNA hantavirus vaccine class.,platform:VO_0000032
+NCT03537508,meningococcal,PHASE3,VO_0000195,VO_0000195,PREVENTION,2018-04-25,ctgov_final22_2026-10-30,incorrect,correct,MenACYW conjugate; name was generic conjugate,
+NCT04884308,other,PHASE2,VO_0000367,VO_0000367,PREVENTION,2021-04-28,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0000771/VO_0000367,VO_0000771|VO_0000367
+NCT01909752,other,PHASE2,VO_0000032,VO_0000032,TREATMENT,2013-07-31,ctgov_final22_2026-10-30,incorrect,incorrect,DRibble primary; HPV DNA secondary,
+NCT00128661,other,PHASE3,VO_0000484,VO_0000484,PREVENTION,2004-06-30,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0003944/VO_0004914,VO_0003944|VO_0004914
+NCT06800131,hepatitis,PHASE1,VO_0000484,VO_0000484,TREATMENT,2025-02-05,advisor_review_2026-10-30,incorrect,incorrect,HBsAg recombinant protein + microneedle patch; not recombinant vector vaccine.,platform:recombinant protein
+NCT01014845,hepatitis,PHASE3,VO_0000484,VO_0000484,PREVENTION,2007-08-31,advisor_review_2026-10-30,incorrect,incorrect,E. coli–expressed recombinant Hepatitis E protein vaccine ≠ recombinant vector delivery platform.,platform:recombinant protein (not VO_0000484)
+NCT05111353,other,PHASE1,VO_0000534,VO_0000534,TREATMENT,2022-12-15,ctgov_final22_2026-10-30,correct,correct,Peptide; Material→peptide class,
+NCT00707148,other,PHASE1,VO_0000561,VO_0000561,PREVENTION,2009-01-31,ctgov_final22_2026-10-30,incorrect,correct,Tdap pregnancy study; not TT-only,
+NCT01483274,other,PHASE1,VO_0000534,VO_0000534,TREATMENT,2015-03-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004246/VO_0000315,VO_0004246|VO_0000315
+NCT05091307,covid,PHASE3,VO_0001236,unknown,PREVENTION,2021-11-02,advisor_review_2026-10-30,incorrect,,Ad26.COV2.S + quadrivalent influenza coadministration; not trivalent influenza (VO_0001236). platform unknown=unlabeled.,material:multi-vaccine / Ad26 COVID or QIV
+NCT01226758,influenza,PHASE1,VO_0001236,unknown,PREVENTION,2010-06-30,advisor_review_2026-10-30,incorrect,,FLU-v is conserved T-cell epitope candidate; not trivalent influenza vaccine (VO_0001236). platform was unknown (unlabeled).,material:peptide/epitope vaccine class
+NCT04544267,influenza,PHASE3,VO_0004673,unknown,PREVENTION,2020-09-15,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT00893906,influenza,PHASE4,VO_0001236,unknown,PREVENTION,2009-05-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT00640861,other,EARLY_PHASE1,VO_0000577,unknown,TREATMENT,2008-08-28,ctgov_final22_2026-10-30,correct,correct,Peptide; set subunit platform,
+NCT01355393,other,PHASE1/PHASE2,VO_0000577,unknown,TREATMENT,2011-07-31,ctgov_final22_2026-10-30,correct,correct,Peptide; set subunit platform,
+NCT01666782,influenza,PHASE2,VO_0001236,unknown,PREVENTION,2012-08-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT03460743,influenza,PHASE3,VO_0004673,unknown,OTHER,2018-03-22,advisor_review_2026-10-30,correct,ambiguous,Quadrivalent influenza study includes recombinant HA and inactivated arms; single platform insufficient.,per-arm platforms
+NCT05779020,influenza,PHASE3,VO_0004673,unknown,PREVENTION,2023-04-25,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT06436703,influenza,PHASE2,VO_0004673,unknown,PREVENTION,2024-05-23,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT01488188,other,PHASE1,VO_0001236,unknown,BASIC_SCIENCE,2011-12-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT00391391,influenza,PHASE2,VO_0001236,unknown,PREVENTION,2006-10-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT05519839,covid,PHASE2,VO_0001236,unknown,PREVENTION,2022-12-30,advisor_review_2026-10-30,incorrect,,SARS-CoV-2 + quadrivalent influenza nanoparticle combination; not trivalent influenza.,material:combination / QIV+COVID
+NCT02550197,influenza,PHASE3,VO_0004673,unknown,PREVENTION,2015-09-30,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT04997239,influenza,PHASE4,VO_0004673,unknown,PREVENTION,2021-10-10,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT01306682,influenza,PHASE2/PHASE3,VO_0001236,unknown,PREVENTION,2011-03-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT00231816,zoster,PHASE3,VO_0001236,unknown,PREVENTION,2005-09-30,advisor_review_2026-10-30,ambiguous,,"Zostavax + inactivated influenza. If arch_vo may be any study vaccine, flu label may be OK; if primary investigational only, use Zostavax. Policy TBD.",policy-dependent: Zostavax vs influenza
+NCT00258830,influenza,PHASE4,VO_0000047,unknown,PREVENTION,2005-09-30,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0000047/VO_0000315,VO_0000047|VO_0000315
+NCT05154383,other,PHASE4,VO_0004673,unknown,BASIC_SCIENCE,2021-11-15,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT01162122,influenza,PHASE3,VO_0001236,unknown,PREVENTION,2010-08-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT01527825,influenza,PHASE3,VO_0001236,unknown,PREVENTION,2012-09-30,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT03756246,other,PHASE4,VO_0001236,unknown,DIAGNOSTIC,2019-06-10,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT02762851,influenza,PHASE4,VO_0001236,unknown,TREATMENT,2016-06-30,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT00345462,other,PHASE3,VO_0001236,unknown,PREVENTION,2006-06-30,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT02710409,influenza,PHASE3,VO_0004673,unknown,PREVENTION,2016-01-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT05801978,other,PHASE4,VO_0004673,unknown,BASIC_SCIENCE,2023-04-11,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT00402805,influenza,PHASE4,VO_0001236,unknown,PREVENTION,2006-10-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT02506933,other,PHASE2,VO_0007460,unknown,SUPPORTIVE_CARE,2015-11-05,advisor_review_2026-10-30,correct,ambiguous,VO_0007460 CMV-MVA Triplex OK; platform unknown—consider recombinant vector if labeling platforms.,platform:recombinant vector?
+NCT01827462,influenza,PHASE4,VO_0001236,unknown,PREVENTION,2007-10-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT05827978,influenza,PHASE3,VO_0004673,unknown,TREATMENT,2023-04-17,advisor_review_2026-10-30,correct,ambiguous,Includes QIV; experimental mRNA vs inactivated comparator need separate platforms. primary_purpose=TREATMENT is registry value—keep separate from VO judgment.,per-arm platforms
+NCT06279871,covid,PHASE3,VO_0001236,unknown,PREVENTION,2024-03-27,advisor_review_2026-10-30,incorrect,,Self-amplifying RNA COVID-19 + quadrivalent influenza; not trivalent influenza.,material:saRNA COVID and/or QIV
+NCT05517174,influenza,PHASE4,VO_0004673,unknown,TREATMENT,2022-09-22,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT06024096,other,PHASE4,VO_0004673,unknown,BASIC_SCIENCE,2023-09-20,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT00504231,influenza,PHASE2,VO_0000047,unknown,PREVENTION,2007-09-30,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0000047/VO_0000315,VO_0000047|VO_0000315
+NCT00579345,influenza,PHASE3,VO_0001236,unknown,PREVENTION,2007-10-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT03784885,influenza,PHASE2,VO_0001236,unknown,PREVENTION,2017-09-01,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT02914275,influenza,PHASE3,VO_0004673,unknown,PREVENTION,2016-09-27,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004673/VO_0000315,VO_0004673|VO_0000315
+NCT01698177,influenza,PHASE4,VO_0001236,unknown,HEALTH_SERVICES_RESEARCH,2011-10-31,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315
+NCT04848467,covid,PHASE3,VO_0004673,unknown,PREVENTION,2021-10-01,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0004908/VO_0000186,VO_0004908|VO_0000186
+NCT00388583,influenza,PHASE2,VO_0001236,unknown,PREVENTION,2006-09-30,auto_remediated_verified_2026-10-30,correct,correct,Auto-remediated under Policy A; locked target VO_0001236/VO_0000315,VO_0001236|VO_0000315

@@ -4,25 +4,18 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import os
-
-# Repo root = parents[2] when package lives at <root>/osean_kg/ctdr/
-_DEFAULT_ROOT = Path(__file__).resolve().parents[2]
-ROOT = Path(os.environ.get("OSEAN_CTDR_ROOT", _DEFAULT_ROOT))
-OSEAN_KG = Path(os.environ.get("OSEAN_KG", ROOT / "osean_kg"))
-# Prefer bundled sidecars under data/sea_cdm_v14; fall back to local SEA-CDM layout.
-_V14_ENV = os.environ.get("SEA_CDM_V14")
-if _V14_ENV:
-    V14 = Path(_V14_ENV)
-else:
-    _bundled = ROOT / "data" / "sea_cdm_v14"
-    _legacy = ROOT / "SEA-CDM AACT vaccine remapped" / "v1.4"
-    V14 = _bundled if (_bundled / "study_context_profile.csv").exists() else _legacy
+ROOT = Path(__file__).resolve().parents[2]
+OSEAN_KG = Path(__file__).resolve().parents[1]
+V14 = ROOT / "SEA-CDM AACT vaccine remapped" / "v1.4"
 CKPT = OSEAN_KG / "ckpts" / "sea_ml_v14"
 CTDR_DIR = CKPT / "ctdr"
 
 PROFILE = V14 / "study_context_profile.csv"
 DISEASE_VO_MAP = CKPT / "disease_vo_map.csv"
+# Primary-investigational mapping overlay (Material + platform fixes from mapping audit)
+VO_CORRECTIONS = (
+    CKPT / "ctdr" / "optimize" / "mapping_audit" / "vo_corrections_primary.csv"
+)
 
 # --- cohort / split ---
 SPLIT_DATE = "2022-01-01"  # train: start_date < SPLIT_DATE; test: >=

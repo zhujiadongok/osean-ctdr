@@ -47,30 +47,30 @@
       }
     },
     "logistic": {
-      "mean_accuracy": 0.8144876325088338,
-      "mean_macro_f1": 0.6043531919251368,
+      "mean_accuracy": 0.8180212014134275,
+      "mean_macro_f1": 0.6101862792326402,
       "per_target": {
         "allocation": {
-          "accuracy": 0.8869257950530035,
-          "macro_f1": 0.5253668763102726,
+          "accuracy": 0.8939929328621908,
+          "macro_f1": 0.5550314465408805,
           "n_classes_gold": 2,
           "n_eval": 283
         },
         "masking_binary": {
-          "accuracy": 0.6996466431095406,
-          "macro_f1": 0.6282817980931188,
+          "accuracy": 0.7137809187279152,
+          "macro_f1": 0.645774419359325,
           "n_classes_gold": 2,
           "n_eval": 283
         },
         "intervention_binary": {
-          "accuracy": 0.8798586572438163,
-          "macro_f1": 0.4957023060796646,
+          "accuracy": 0.8657243816254417,
+          "macro_f1": 0.4640151515151515,
           "n_classes_gold": 2,
           "n_eval": 283
         },
         "enrollment_binary": {
-          "accuracy": 0.7915194346289752,
-          "macro_f1": 0.7680617872174915,
+          "accuracy": 0.7985865724381626,
+          "macro_f1": 0.7759240995152037,
           "n_classes_gold": 2,
           "n_eval": 283
         }
@@ -78,37 +78,37 @@
     },
     "hist_gbdt": {
       "mean_accuracy": 0.8206713780918727,
-      "mean_macro_f1": 0.6337050412504603,
+      "mean_macro_f1": 0.6267952683733526,
       "per_target": {
         "allocation": {
           "accuracy": 0.8869257950530035,
-          "macro_f1": 0.6057122953674678,
+          "macro_f1": 0.5695817490494297,
           "n_classes_gold": 2,
           "n_eval": 283
         },
         "masking_binary": {
-          "accuracy": 0.7102473498233216,
-          "macro_f1": 0.624886848571059,
+          "accuracy": 0.7173144876325088,
+          "macro_f1": 0.6402237477752352,
           "n_classes_gold": 2,
           "n_eval": 283
         },
         "intervention_binary": {
-          "accuracy": 0.8798586572438163,
-          "macro_f1": 0.5204346092503986,
+          "accuracy": 0.8763250883392226,
+          "macro_f1": 0.5180752201625067,
           "n_classes_gold": 2,
           "n_eval": 283
         },
         "enrollment_binary": {
-          "accuracy": 0.8056537102473498,
-          "macro_f1": 0.7837864118129159,
+          "accuracy": 0.8021201413427562,
+          "macro_f1": 0.7793003565062389,
           "n_classes_gold": 2,
           "n_eval": 283
         }
       }
     },
     "exact_knn_k20": {
-      "mean_accuracy": 0.7968197879858657,
-      "mean_macro_f1": 0.5647806332114893,
+      "mean_accuracy": 0.7915194346289753,
+      "mean_macro_f1": 0.5592986008123979,
       "per_target": {
         "allocation": {
           "accuracy": 0.8904593639575972,
@@ -117,68 +117,8 @@
           "n_eval": 283
         },
         "masking_binary": {
-          "accuracy": 0.6819787985865724,
-          "macro_f1": 0.6108360836083608,
-          "n_classes_gold": 2,
-          "n_eval": 283
-        },
-        "intervention_binary": {
-          "accuracy": 0.8763250883392226,
-          "macro_f1": 0.4670433145009416,
-          "n_classes_gold": 2,
-          "n_eval": 283
-        },
-        "enrollment_binary": {
-          "accuracy": 0.7385159010600707,
-          "macro_f1": 0.6800207798557634,
-          "n_classes_gold": 2,
-          "n_eval": 283
-        }
-      }
-    },
-    "ontsim_subclass_k20": {
-      "mean_accuracy": 0.8003533568904594,
-      "mean_macro_f1": 0.5736935865532338,
-      "per_target": {
-        "allocation": {
-          "accuracy": 0.8798586572438163,
-          "macro_f1": 0.4957023060796646,
-          "n_classes_gold": 2,
-          "n_eval": 283
-        },
-        "masking_binary": {
-          "accuracy": 0.6890459363957597,
-          "macro_f1": 0.6106316447779863,
-          "n_classes_gold": 2,
-          "n_eval": 283
-        },
-        "intervention_binary": {
-          "accuracy": 0.8763250883392226,
-          "macro_f1": 0.4670433145009416,
-          "n_classes_gold": 2,
-          "n_eval": 283
-        },
-        "enrollment_binary": {
-          "accuracy": 0.7561837455830389,
-          "macro_f1": 0.7213970808543424,
-          "n_classes_gold": 2,
-          "n_eval": 283
-        }
-      }
-    },
-    "ontsim_subclass_role_k20": {
-      "mean_accuracy": 0.8003533568904594,
-      "mean_macro_f1": 0.573201879397716,
-      "per_target": {
-        "allocation": {
-          "accuracy": 0.8798586572438163,
-          "macro_f1": 0.4957023060796646,
-          "n_classes_gold": 2,
-          "n_eval": 283
-        },
-        "masking_binary": {
-          "accuracy": 0.6925795053003534,
-          "macro_f1": 0.6135154226512833,
+          "accuracy": 0.6466431095406361,
+          "macro_f1": 0.5575359599749844,
           "n_classes_gold": 2,
           "n_eval": 283
         },
@@ -190,7 +130,67 @@
         },
         "enrollment_binary": {
           "accuracy": 0.7526501766784452,
-          "macro_f1": 0.7165464743589745,
+          "macro_f1": 0.7113927738927739,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        }
+      }
+    },
+    "ontsim_subclass_k20": {
+      "mean_accuracy": 0.8056537102473498,
+      "mean_macro_f1": 0.5708209371974333,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8833922261484098,
+          "macro_f1": 0.46904315196998125,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "masking_binary": {
+          "accuracy": 0.7031802120141343,
+          "macro_f1": 0.6157377473166947,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "intervention_binary": {
+          "accuracy": 0.872791519434629,
+          "macro_f1": 0.4660377358490566,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "enrollment_binary": {
+          "accuracy": 0.7632508833922261,
+          "macro_f1": 0.7324651136540008,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        }
+      }
+    },
+    "ontsim_subclass_role_k20": {
+      "mean_accuracy": 0.8038869257950529,
+      "mean_macro_f1": 0.5759381157632921,
+      "per_target": {
+        "allocation": {
+          "accuracy": 0.8833922261484098,
+          "macro_f1": 0.497497982243745,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "masking_binary": {
+          "accuracy": 0.7031802120141343,
+          "macro_f1": 0.6157377473166947,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "intervention_binary": {
+          "accuracy": 0.872791519434629,
+          "macro_f1": 0.4660377358490566,
+          "n_classes_gold": 2,
+          "n_eval": 283
+        },
+        "enrollment_binary": {
+          "accuracy": 0.7561837455830389,
+          "macro_f1": 0.7244789976436725,
           "n_classes_gold": 2,
           "n_eval": 283
         }
@@ -229,60 +229,60 @@
       }
     },
     "logistic": {
-      "mean_accuracy": 0.8094262295081966,
-      "mean_macro_f1": 0.637800631040653,
+      "mean_accuracy": 0.8145491803278688,
+      "mean_macro_f1": 0.6310043374263874,
       "per_target": {
         "allocation": {
-          "accuracy": 0.860655737704918,
-          "macro_f1": 0.5753480753480753,
+          "accuracy": 0.8524590163934426,
+          "macro_f1": 0.5679716702734605,
           "n_classes_gold": 2,
           "n_eval": 244
         },
         "masking_binary": {
-          "accuracy": 0.7131147540983607,
-          "macro_f1": 0.6579347913161899,
+          "accuracy": 0.7336065573770492,
+          "macro_f1": 0.6785243741765481,
           "n_classes_gold": 2,
           "n_eval": 244
         },
         "intervention_binary": {
-          "accuracy": 0.8770491803278688,
-          "macro_f1": 0.5501474926253688,
+          "accuracy": 0.8688524590163934,
+          "macro_f1": 0.4941694739569837,
           "n_classes_gold": 2,
           "n_eval": 244
         },
         "enrollment_binary": {
-          "accuracy": 0.7868852459016393,
-          "macro_f1": 0.7677721648729776,
+          "accuracy": 0.8032786885245902,
+          "macro_f1": 0.7833518312985572,
           "n_classes_gold": 2,
           "n_eval": 244
         }
       }
     },
     "hist_gbdt": {
-      "mean_accuracy": 0.8063524590163935,
-      "mean_macro_f1": 0.5989062202223497,
+      "mean_accuracy": 0.7868852459016393,
+      "mean_macro_f1": 0.5875345553554995,
       "per_target": {
         "allocation": {
-          "accuracy": 0.8483606557377049,
-          "macro_f1": 0.484438353035235,
+          "accuracy": 0.8319672131147541,
+          "macro_f1": 0.49816904941058443,
           "n_classes_gold": 2,
           "n_eval": 244
         },
         "masking_binary": {
-          "accuracy": 0.7172131147540983,
-          "macro_f1": 0.6467107333962858,
+          "accuracy": 0.6885245901639344,
+          "macro_f1": 0.619376026272578,
           "n_classes_gold": 2,
           "n_eval": 244
         },
         "intervention_binary": {
-          "accuracy": 0.860655737704918,
-          "macro_f1": 0.49016715830875124,
+          "accuracy": 0.8565573770491803,
+          "macro_f1": 0.48822436627314675,
           "n_classes_gold": 2,
           "n_eval": 244
         },
         "enrollment_binary": {
-          "accuracy": 0.7991803278688525,
-          "macro_f1": 0.7743086361491269,
+          "accuracy": 0.7704918032786885,
+          "macro_f1": 0.7443687794656888,
           "n_classes_gold": 2,
           "n_eval": 244
         }
@@ -291,16 +291,16 @@
   },
   "bootstrap_ontsim_vs_exact": {
     "ontsim_role_minus_exact": {
-      "mean_diff_trial": 0.0035335689045936395,
-      "ci95_lo": -0.0088339222614841,
-      "ci95_hi": 0.015017667844522967,
+      "mean_diff_trial": 0.012367491166077738,
+      "ci95_lo": 0.0,
+      "ci95_hi": 0.02561837455830389,
       "n_trials": 283,
       "n_boot": 1500
     },
     "ontsim_subclass_minus_exact": {
-      "mean_diff_trial": 0.0035335689045936395,
-      "ci95_lo": -0.007950530035335688,
-      "ci95_hi": 0.015017667844522967,
+      "mean_diff_trial": 0.014134275618374558,
+      "ci95_lo": 0.0017667844522968198,
+      "ci95_hi": 0.027385159010600707,
       "n_trials": 283,
       "n_boot": 1500
     }

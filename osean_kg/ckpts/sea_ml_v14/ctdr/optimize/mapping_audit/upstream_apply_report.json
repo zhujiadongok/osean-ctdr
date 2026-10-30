@@ -1,0 +1,11 @@
+{
+  "applied_at_utc": "2026-10-30T18:04:21.175271+00:00",
+  "n_corrections": 620,
+  "n_arch_updated": 620,
+  "n_platform_updated": 620,
+  "n_missing_link": 0,
+  "n_missing_profile": 0,
+  "disease_vo_map": "D:\\study\\Research\\he\\osean_kg\\ckpts\\sea_ml_v14\\disease_vo_map.csv",
+  "profile": "D:\\study\\Research\\he\\SEA-CDM AACT vaccine remapped\\v1.4\\study_context_profile.csv",
+  "corrections_file": "D:\\study\\Research\\he\\osean_kg\\ckpts\\sea_ml_v14\\ctdr\\optimize\\mapping_audit\\vo_corrections_policy_a.csv"
+}

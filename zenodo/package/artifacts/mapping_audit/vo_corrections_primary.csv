@@ -1,0 +1,621 @@
+nct_id,arch_vo,vo_platform,action,rationale
+NCT00197301,VO_0000642,VO_0000315,fix,Liposomal nasal influenza; not DNA platform
+NCT00231816,VO_0000124,VO_0000367,fix,Policy A primary=Zostavax (live attenuated); not TIV
+NCT01014845,VO_0006017,VO_0000483,fix,Licensed HepE recombinant protein; protein subunit not vector
+NCT01073293,VO_0003075,VO_0004914,fix,V503/HPV L1 VLP (Gardasil-9 lineage); not recombinant vector
+NCT01226758,VO_0000577,unknown,fix,FLU-v epitope peptide candidate not trivalent influenza
+NCT02506933,VO_0007460,VO_0000484,fix,CMV-MVA Triplex Material OK; set recombinant vector platform
+NCT03718130,VO_0004576,VO_0000032,fix,HTNV/PUUV DNA vaccine; DNA platform
+NCT04362124,VO_0000771,VO_0000367,fix,BCG primary; keep live-attenuated platform; not COVID-19 Material
+NCT04617483,VO_0004908,VO_0000315,fix,Inactivated SARS-CoV-2; keep COVID-19 Material; platform inactivated not live attenuated
+NCT05091307,VO_0004908,VO_0000484,fix,Policy A primary=Ad26.COV2.S (COVID vectored); not TIV
+NCT05266898,VO_0003075,VO_0004914,fix,Gardasil 9 Material; VLP platform not recombinant vector
+NCT05519839,VO_0004908,unknown,fix,Policy A primary=SARS-CoV-2 combo component; not TIV; platform multi/unclear
+NCT05749926,VO_0004908,unknown,fix,Multi-platform COVID boosters; Material=COVID-19 class; platform unmarked (ambiguous)
+NCT05985681,VO_0004914,VO_0004914,fix,RG1-VLP candidate (no product-specific VO); VLP class not Gardasil-9 / not vector
+NCT06279871,VO_0005198,VO_0000186,fix,Policy A primary=saRNA COVID-19; not TIV
+NCT06800131,VO_0003150,VO_0000483,fix,HBsAg recombinant protein microneedle; protein subunit not vector
+NCT04848467,VO_0004908,VO_0000186,fix,CVnCoV mRNA + QIV co-admin; primary=CVnCoV RNA
+NCT05827926,VO_0004908,VO_0000186,fix,mRNA-1083 multi-component; not influenza DNA Material/platform
+NCT06091410,VO_0004908,unknown,fix,COVID + influenza co-admin; primary=COVID; platform multi→unknown
+NCT06097273,VO_0004908,VO_0000186,fix,mRNA-1083 (SARS-CoV-2+influenza) primary; RNA platform
+NCT06831786,VO_0004908,VO_0000186,fix,BNT162b2 + QIV co-admin; primary=COVID mRNA
+NCT06864143,VO_0004908,VO_0000186,fix,mRNA-1083 (influenza+COVID) primary; RNA platform
+NCT00131833,VO_0003443,VO_0000534,fix,Typhoid Vi polysaccharide; not live attenuated
+NCT00373217,VO_0000577,VO_0000534,fix,Ovarian peptide vaccine
+NCT00384059,VO_0001244,VO_0000195,fix,PCV13 (Prevnar 13)
+NCT00640861,VO_0000577,VO_0000534,fix,HER2/MUC1 peptide vaccines
+NCT00704938,VO_0000484,VO_0000484,fix,DC-adenovirus p53; vector OK
+NCT00705640,VO_0000577,VO_0000534,fix,Melanoma multi-epitope peptide
+NCT00707148,VO_0003180,VO_0000561,fix,Tdap in pregnancy; not tetanus-toxoid-only
+NCT00806195,VO_0003441,VO_0000195,fix,Primary MenACWY-CRM; ActHIB was coadmin mis-extract
+NCT01056705,VO_0003834,VO_0000315,fix,Sabin IPV primary; not DTaP-IPV-Hib name extract
+NCT01260727,VO_0000032,VO_0000032,fix,PENNVAX DNA primary (+MVA boost)
+NCT01349647,VO_0000195,VO_0000195,fix,KLH conjugate cocktail; conjugate OK
+NCT01355393,VO_0000577,VO_0000534,fix,HER2 peptide vaccine
+NCT01359449,VO_0000071,VO_0000195,fix,Menactra MCV4
+NCT01531530,VO_0000668,VO_0000367,fix,CVD 1208S live oral Shigella
+NCT01546389,VO_0005808,VO_0000367,fix,PfSPZ Sanaria
+NCT01909752,VO_0007319,VO_0000483,fix,DRibble tumor vaccine primary; HPV secondary
+NCT01943825,VO_0010342,VO_0000367,fix,CYD/Dengvaxia dengue primary; not JE DNA
+NCT02309515,VO_0001244,VO_0000195,fix,PCV13
+NCT03163121,VO_0005808,VO_0000367,fix,PfSPZ Sanaria
+NCT03412786,VO_0000577,VO_0000534,fix,Bcl-Xl peptide vaccine
+NCT03537508,VO_0003441,VO_0000195,fix,MenACYW conjugate primary
+NCT05111353,VO_0000577,VO_0000534,fix,Synthetic MUC1 peptide
+NCT02263027,VO_0004246,VO_0000315,fix,Anthrax Vaccine Adsorbed primary; not influenza Material
+NCT02935192,VO_0004246,VO_0000315,fix,Anthrax Vaccine Adsorbed primary; not influenza Material
+NCT00119067,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT01022749,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT01072734,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT01299480,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT01483274,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT01896869,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT03391921,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT04107961,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT04553016,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT04948619,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT05298800,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT06190509,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT06837116,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT06955728,VO_0004246,VO_0000315,fix,AVA: anthrax Material + inactivated platform
+NCT00003279,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT00003715,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT00514072,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT01250249,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT01650389,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT01694108,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT02013245,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT02367664,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT02692963,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT02771782,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT03091660,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT03582085,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04152161,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04239313,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04327206,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04328441,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04348370,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04350931,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04414267,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04417335,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04453293,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04461379,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04475302,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04563273,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04612634,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04632537,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04648800,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04658680,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04659941,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04852068,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04884308,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT04899765,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT05004038,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT05124340,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT05284812,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT05330884,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT05507671,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT05539989,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT05592223,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT05667974,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT06078423,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT06132789,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT06148025,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT06257212,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT06280144,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT07005726,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT07021703,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT07028801,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT07055295,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT07055880,VO_0000771,VO_0000367,fix,"BCG primary by name; Material=BCG, platform=live attenuated"
+NCT00003665,VO_0000577,VO_0000534,fix,DC-peptide vaccine; peptide not vector
+NCT00039325,VO_0000577,VO_0000534,fix,DC-peptide vaccine; peptide not vector
+NCT00085397,VO_0007319,VO_0000483,fix,DC-tumor vaccine; not vector
+NCT00458536,VO_0007319,VO_0000483,fix,DC-tumor vaccine; not vector
+NCT00459069,VO_0007319,VO_0000483,fix,DC-tumor vaccine; not vector
+NCT00616720,VO_0001029,VO_0000483,fix,Dendritic-cell vaccine; not recombinant vector
+NCT00622401,VO_0007319,VO_0000483,fix,DC-tumor vaccine; not vector
+NCT00799110,VO_0007319,VO_0000483,fix,DC-tumor vaccine; not vector
+NCT01067287,VO_0007319,VO_0000483,fix,DC-tumor vaccine; not vector
+NCT01446731,VO_0001029,VO_0000483,fix,Dendritic-cell vaccine; not recombinant vector
+NCT01678352,VO_0007319,VO_0000483,fix,DC-tumor vaccine; not vector
+NCT01803152,VO_0000577,VO_0000534,fix,DC-peptide vaccine; peptide not vector
+NCT02493829,VO_0001029,VO_0000483,fix,Dendritic-cell vaccine; not recombinant vector
+NCT04201873,VO_0007319,VO_0000483,fix,DC-tumor vaccine; not vector
+NCT05195619,VO_0000577,VO_0000534,fix,DC-peptide vaccine; peptide not vector
+NCT06477614,VO_0001029,VO_0000483,fix,Dendritic-cell vaccine; not recombinant vector
+NCT00056797,VO_0000484,VO_0000484,fix,DNA prime / viral-vector product; keep vector platform
+NCT00080106,VO_0000484,VO_0000484,fix,DNA prime / viral-vector product; keep vector platform
+NCT00894114,VO_0000484,VO_0000484,fix,DNA prime / viral-vector product; keep vector platform
+NCT00136331,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT00370864,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT00376402,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT00397215,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT00434733,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT00502593,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT00535665,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT00660257,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT00755703,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT01016548,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT01047202,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT01053143,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT01111968,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT01215149,VO_0000484,VO_0000484,fix,Adenoviral/ALVAC vector; not DNA platform
+NCT01766921,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT01776541,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT01776554,VO_0000642,VO_0000315,fix,AS03 pandemic influenza; inactivated not DNA
+NCT01982487,VO_0000484,VO_0000484,fix,Adenoviral/ALVAC vector; not DNA platform
+NCT04453852,VO_0004908,unknown,fix,Platform was DNA but name has no DNA evidence; unlabel platform
+NCT04742842,VO_0004908,unknown,fix,Platform was DNA but name has no DNA evidence; unlabel platform
+NCT05047445,VO_0004908,unknown,fix,Platform was DNA but name has no DNA evidence; unlabel platform
+NCT00133510,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00170547,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00192179,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00192413,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00242424,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00258830,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00283283,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00310648,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00310804,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00316615,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00316628,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00333398,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00344305,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00345462,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00380211,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00388583,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00390884,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00391391,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00402805,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00408395,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00436046,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00479921,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00492063,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00498303,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00504231,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00551031,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00579345,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00596336,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00607178,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00607217,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00644059,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00662272,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00677820,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00710866,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00772109,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00775450,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00782431,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00800605,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00831987,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00841763,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00848848,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00858611,VO_0001176,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00868218,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00883012,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00889889,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00893906,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00895544,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00915187,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00918268,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00934245,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00961337,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00962715,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00976027,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00987350,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00988143,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01002508,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01011049,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01034254,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01119157,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01162122,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01164553,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01173211,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01181336,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01205581,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01215734,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01216332,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01218646,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01222403,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01224262,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01240746,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01258595,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01306669,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01306682,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01319955,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01346592,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01403376,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01427309,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01430689,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01430819,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01481454,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01488188,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01525004,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01527825,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01582633,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01623232,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01644149,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01666782,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01680679,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01691326,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01691339,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01695733,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01698177,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01712984,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01720277,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01761435,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01773928,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01808456,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01810731,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01819155,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01827462,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01945268,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01946425,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01946438,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT01964989,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02035696,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02062281,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02104869,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02121782,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02126761,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02148328,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02214225,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02222870,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02228980,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02249221,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02255279,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02255409,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02258334,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02268500,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02451358,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02519855,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02539108,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02550197,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02553343,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02563093,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02565277,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02587221,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02598089,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02640989,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02708173,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02710409,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02762851,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02787044,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02831608,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02860039,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02882100,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02908269,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02914275,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02915302,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02946177,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02947217,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02982915,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT02998736,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03028116,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03058692,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03088904,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03139565,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03179761,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03277703,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03336593,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03391193,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03460743,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03617523,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03698279,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03744104,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03756246,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03777163,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03784885,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03853993,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03859141,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT03996538,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04001504,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04109222,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04137887,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04176133,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04210349,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04498832,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04537234,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04544267,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04551677,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04613206,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04667117,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04697576,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT04997239,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05048589,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05050318,VO_0000047,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05070494,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05071313,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05074303,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05082688,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05144945,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05154383,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05215327,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05227001,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05245552,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05284799,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05426174,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05431725,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05471531,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05512494,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05513053,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05517174,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05540522,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05553301,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05606965,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05624606,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05645900,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05650554,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05755620,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05779020,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05801978,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05827978,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05945485,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05947071,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05970887,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT05996549,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT06024096,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT06049927,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT06118151,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT06141655,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT06336317,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT06361875,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT06436703,VO_0004673,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT06507553,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT06641180,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT06824519,VO_0001236,VO_0000315,fix,Licensed inactivated influenza product; platform inactivated
+NCT00971737,VO_0007319,VO_0000483,fix,GM-CSF tumor/cell vaccine; not DNA/vector
+NCT01045460,VO_0007319,VO_0000483,fix,GM-CSF tumor/cell vaccine; not DNA/vector
+NCT00116467,VO_0007467,VO_0000483,fix,GVAX tumor-cell vaccine; not vector
+NCT00255827,VO_0007610,VO_0000483,fix,GVAX tumor-cell vaccine; not vector
+NCT00569387,VO_0007610,VO_0000483,fix,GVAX tumor-cell vaccine; not vector
+NCT00614601,VO_0007610,VO_0000483,fix,GVAX tumor-cell vaccine; not vector
+NCT00727441,VO_0007610,VO_0000483,fix,GVAX tumor-cell vaccine; not vector
+NCT00771017,VO_0007467,VO_0000483,fix,GVAX tumor-cell vaccine; not vector
+NCT00836407,VO_0007610,VO_0000483,fix,GVAX tumor-cell vaccine; not vector
+NCT00262002,VO_0004914,VO_0004914,fix,Chimeric HBV core particle vaccine; VLP/protein not vector
+NCT01884415,VO_0004914,VO_0004914,fix,Chimeric HBV core particle vaccine; VLP/protein not vector
+NCT02713620,VO_0004914,VO_0004914,fix,Chimeric HBV core particle vaccine; VLP/protein not vector
+NCT02776761,VO_0004914,VO_0004914,fix,Chimeric HBV core particle vaccine; VLP/protein not vector
+NCT00139113,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT01446978,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT01926860,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT02038907,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT03231605,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT04515147,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT05084508,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT05543642,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT06693895,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT06740630,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT06806137,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT06855160,VO_0003464,VO_0000315,fix,Hepatitis A inactivated vaccine
+NCT00000583,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00144313,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00230061,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00315055,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00322361,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00383227,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00383383,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00383591,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00393523,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00414050,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00426712,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00440297,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00440531,VO_0003237,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00489099,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT00841477,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT01183611,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT01203319,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT01261130,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT01341275,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT01356823,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT01933412,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02057263,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02109354,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02126462,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02152709,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02203357,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02249988,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02360592,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02601040,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02603055,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02692170,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02697474,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02710851,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02732054,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02898922,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02959775,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02963714,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02991599,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03038802,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03083158,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03212911,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03219203,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03316807,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03365921,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03405597,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03897946,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03910972,VO_0003258,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03962803,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03962816,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT03962881,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT04083157,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT05326152,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT05432141,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT05482295,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT05526820,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT05613127,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT06564116,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT06690515,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT06888479,VO_0003150,VO_0000483,fix,HepB recombinant protein / HBsAg; not vector/peptide/DNA mislabel
+NCT02417597,VO_0006017,VO_0000483,fix,Recombinant HepE protein; not vector
+NCT02964910,VO_0006017,VO_0000483,fix,Recombinant HepE protein; not vector
+NCT03168412,VO_0006017,VO_0000483,fix,Recombinant HepE protein; not vector
+NCT00092482,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT00092495,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT00128661,VO_0003944,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT00517309,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT01173900,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT01687192,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT01824537,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT01928225,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT01984697,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT02624349,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT03296397,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT03832049,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT04255849,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT04436133,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT04953130,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT06624839,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT06793410,VO_0003075,VO_0004914,fix,HPV L1 VLP / licensed HPV vaccine; VLP not recombinant vector
+NCT00300612,VO_0007676,VO_0000483,fix,HyperAcute cell vaccine; not generic recombinant vector
+NCT04352608,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04383574,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04412538,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04470609,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04551547,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04612972,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04756323,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04758273,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04801888,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04894227,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04984408,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT04998240,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT05112913,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT05716347,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT05952505,VO_0004908,VO_0000315,fix,Inactivated SARS/COVID; platform inactivated not live attenuated
+NCT00168662,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT01389687,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT01997632,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT04027036,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT04051736,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT05155579,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT05163561,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT05457946,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT05460377,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT06748612,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT06947499,VO_0003834,VO_0000315,fix,Inactivated poliovirus vaccine; not live/DNA mislabel
+NCT01092507,VO_0000665,unknown,fix,JE vaccine; not recombinant vector
+NCT01396512,VO_0000665,unknown,fix,JE vaccine; not recombinant vector
+NCT02492165,VO_0000665,unknown,fix,JE vaccine; not recombinant vector
+NCT00092404,VO_0000367,VO_0000367,fix,Measles Virus Vaccine VVN; live attenuated not vector
+NCT00092430,VO_0000367,VO_0000367,fix,Measles Virus Vaccine VVN; live attenuated not vector
+NCT00109278,VO_0000367,VO_0000367,fix,Measles Virus Vaccine VVN; live attenuated not vector
+NCT00984295,VO_0000367,VO_0000367,fix,Measles Virus Vaccine VVN; live attenuated not vector
+NCT00197795,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT00248833,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT00297817,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT00443157,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT00616421,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT00657709,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT00678652,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT00780806,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT00798304,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT00808028,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT01027351,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT01272180,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT01339923,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT01367158,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT01423084,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT01717638,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT01934140,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT01939158,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT01962207,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT01973218,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT02106390,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT02526394,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT02946385,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT03562377,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT04350138,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT04722003,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT04825223,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT05294588,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT06128733,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT06314880,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT06647407,VO_0006034,VO_0000195,fix,Meningococcal conjugate/unknown formulation; not live attenuated
+NCT02241135,VO_0000186,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT03392389,VO_0000186,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04144348,VO_0000186,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04283461,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04405076,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04470427,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04649151,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04748471,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04785144,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04796896,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04813796,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04885907,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04889209,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04927065,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04969276,VO_0000186,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT04978038,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05030974,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05047640,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05119855,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05132855,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05137236,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05231005,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05249829,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05280158,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05293665,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05315362,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05324319,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05345873,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05373472,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05373485,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05375838,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05383560,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05397223,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05398796,VO_0000186,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05436834,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05584202,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05585632,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05815498,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05829356,VO_0000186,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT05938075,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT06113731,VO_0004908,VO_0000186,fix,Named mRNA/RNA vaccine; RNA Material/platform (not vector/DNA/flu mislabel)
+NCT01995708,VO_0001029,VO_0000186,fix,mRNA-loaded DC vaccine; RNA platform not vector/DNA
+NCT02061332,VO_0001029,VO_0000186,fix,mRNA-loaded DC vaccine; RNA platform not vector/DNA
+NCT02074046,VO_0007132,VO_0000186,fix,mRNA-loaded DC vaccine; RNA platform not vector/DNA
+NCT02084823,VO_0007132,VO_0000186,fix,mRNA-loaded DC vaccine; RNA platform not vector/DNA
+NCT02089919,VO_0007132,VO_0000186,fix,mRNA-loaded DC vaccine; RNA platform not vector/DNA
+NCT02115958,VO_0007132,VO_0000186,fix,mRNA-loaded DC vaccine; RNA platform not vector/DNA
+NCT02176746,VO_0007132,VO_0000186,fix,mRNA-loaded DC vaccine; RNA platform not vector/DNA
+NCT00395720,VO_0000534,VO_0000484,fix,MVA±BCG regimen; primary vectored candidate not BCG-only
+NCT00423566,VO_0000534,VO_0000484,fix,MVA±BCG regimen; primary vectored candidate not BCG-only
+NCT04885764,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT04889274,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT04977024,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT05012800,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT05104333,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT05104437,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT05142488,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT05157178,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT05236491,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT05254236,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT05381350,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT05453487,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT06178991,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT06355232,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT06683352,VO_0005158,VO_0000484,fix,Oxford-AstraZeneca / ChAdOx COVID; vectored COVID product
+NCT00524277,VO_0000577,VO_0000534,fix,Peptide/GM-CSF; peptide not vector
+NCT03606967,VO_0000577,VO_0000534,fix,Peptide vaccine; not recombinant vector
+NCT00737503,VO_0001495,VO_0000367,fix,Porcine rotavirus MLV; not recombinant vector
+NCT00981669,VO_0001495,VO_0000367,fix,Porcine rotavirus MLV; not recombinant vector
+NCT01199874,VO_0001495,VO_0000367,fix,Porcine rotavirus MLV; not recombinant vector
+NCT01616693,VO_0001495,VO_0000367,fix,Porcine rotavirus MLV; not recombinant vector
+NCT02145000,VO_0001495,VO_0000367,fix,Porcine rotavirus MLV; not recombinant vector
+NCT02153866,VO_0001495,VO_0000367,fix,Porcine rotavirus MLV; not recombinant vector
+NCT04523246,VO_0003317,VO_0000483,fix,Shingrix gE subunit
+NCT00093522,VO_0007319,VO_0000483,fix,Autologous tumor cell vaccine; not vector
+NCT00126685,VO_0007319,VO_0000483,fix,Autologous tumor cell vaccine; not vector
+NCT00343447,VO_0007319,VO_0000483,fix,Autologous tumor cell vaccine; not vector
+NCT00436930,VO_0007319,VO_0000483,fix,Autologous tumor cell vaccine; not vector
+NCT06868433,VO_0007319,VO_0000483,fix,Autologous tumor cell vaccine; not vector
+NCT00092417,VO_0000669,VO_0000315,fix,Heat-treated VZV V212; inactivated platform not DNA
+NCT02408159,VO_0000669,VO_0000315,fix,Heat-treated VZV V212; inactivated platform not DNA
+NCT05596526,VO_0000669,VO_0000315,fix,Heat-treated VZV V212; inactivated platform not DNA
+NCT05718037,VO_0000669,VO_0000315,fix,Heat-treated VZV V212; inactivated platform not DNA
+NCT06447779,VO_0000669,VO_0000315,fix,Heat-treated VZV V212; inactivated platform not DNA
+NCT06654700,VO_0000669,VO_0000315,fix,Heat-treated VZV V212; inactivated platform not DNA
+NCT06851832,VO_0000669,VO_0000315,fix,Heat-treated VZV V212; inactivated platform not DNA

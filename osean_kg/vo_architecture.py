@@ -13,8 +13,6 @@ from collections import Counter
 from functools import lru_cache
 from pathlib import Path
 
-import os
-
 _ADVISOR = (
     Path(__file__).resolve().parents[1]
     / "SEA-CDM AACT vaccine remapped"
@@ -22,18 +20,8 @@ _ADVISOR = (
     / "vo_mapping"
     / "FOR_ADVISOR"
 )
-# Prefer VO_OWL env, then local advisor copy, then data/vo.owl in the repo.
-_OWL_CANDIDATES = [
-    Path(p)
-    for p in (
-        os.environ.get("VO_OWL"),
-        str(_ADVISOR / "vo.owl"),
-        str(Path(__file__).resolve().parents[1] / "data" / "vo.owl"),
-        str(Path(__file__).resolve().parents[2] / "data" / "vo.owl"),
-    )
-    if p
-]
-OWL_FILES = tuple(p for p in _OWL_CANDIDATES if p.exists()) or (_ADVISOR / "vo.owl",)
+# Advisor source: full VO opened in Protégé (vo.owl), not the older OntoFox slice.
+OWL_FILES = (_ADVISOR / "vo.owl",)
 
 OBO = "http://purl.obolibrary.org/obo/"
 RDF = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
